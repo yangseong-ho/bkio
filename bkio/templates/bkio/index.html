@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+	
+  <script  language="JavaScript" type="text/javascript">
+ var host = location.host.toLowerCase();
+ var currentAddress = location.href;
+ if (host.indexOf("www") == -1 && host.indexOf("kr") == -1 && host.indexOf("en") == -1)
+ {
+  currentAddress = currentAddress.replace("//","//www.");
+  location.href = currentAddress;
+ }
+ </script>
 	<script type="text/javascript" id="www-widgetapi-script" src="{% static 'bkio/js/www-widgetapi.js' %}" async=""></script>
 	<script src="https://www.youtube.com/iframe_api?v=3.1.12" id="YTAPI"></script>
 	<title>BLUEBAIKAL</title>
@@ -20,7 +30,7 @@
 
 	<!-- Include all css plugins (below), or include individual files as needed -->
 	<link href="{% static 'bkio/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
-<!--	<link href="{% static 'bkio/css/commonv7.css' %}" rel="stylesheet" type="text/css">-->
+	<!--	<link href="{% static 'bkio/css/commonv7.css' %}" rel="stylesheet" type="text/css">-->
 	<!-- Theme CSS -->
 	<link href="{% static 'bkio/css/theme.css' %}" rel="stylesheet" type="text/css">
 	<link href="{% static 'bkio/css/styles.css' %}" rel="stylesheet" type="text/css">
@@ -29,11 +39,11 @@
 
 <body id="page-top" data-preloader-color="bg-white">
 
- <div class="pace  pace-inactive pace-inactive">
- 	<div class="pace-progress bg-blue" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
- 	 <div class="pace-progress-inner"></div>
-	</div>
-	<div class="pace-activity"></div>
+	<div class="pace  pace-inactive pace-inactive">
+		<div class="pace-progress bg-blue" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+			<div class="pace-progress-inner"></div>
+		</div>
+		<div class="pace-activity"></div>
 	</div>
 
 
@@ -97,7 +107,7 @@
 		<!-- //.container -->
 	</header>
 	<section id="main" style="height: 100%" class="bg-white">
-<!--
+		<!--
 		<article class="visual">
 			<ul class="visual-img">
 				<li class="visual01"> </li>
@@ -122,7 +132,7 @@
 			</div>
 		</article>
 -->
-		
+
 		<div style="float: left; width: 30%; height: 100%">
 			<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Our 100 BAIKAL Welcome gift to YOU.</h2>
 			<br>
@@ -145,13 +155,13 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100" src="{% static 'bkio/img/main1.png' %}" style="width: 100%; height: 100%" alt="First slide">
+					<img class="d-block w-100" src="{% static 'bkio/img/main_1.png' %}" style="width: 100%; height: 100%" alt="First slide">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="{% static 'bkio/img/main2.png' %}" style="width: 100%; height: 100%" alt="Second slide">
+					<img class="d-block w-100" src="{% static 'bkio/img/main_2.png' %}" style="width: 100%; height: 100%" alt="Second slide">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="{% static 'bkio/img/main3.png' %}" style="width: 100%; height: 100%" alt="Third slide">
+					<img class="d-block w-100" src="{% static 'bkio/img/main_3.png' %}" style="width: 100%; height: 100%" alt="Third slide">
 				</div>
 			</div>
 		</div>
@@ -174,15 +184,20 @@
 
 	<!--      -->
 
-	<section id="project" style="width: 100%; height: 100%;" class="bg-gray-200">
+	<section id="project" >
+<!--
 		<div class="row justify-content-center mb-5">
 			<div class="col-lg-6 text-center mb-3 mb-lg-5">
 				<h3 class=" font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">BLUE BAIKAL PROJECT</h3>
 			</div>
 		</div>
-		<img src="{% static 'bkio/img/project.png' %}" style="width:100%; height: 100%;">
+-->
+	<div style="text-align: center;">
+		<img src="{% static 'bkio/img/project.png' %}" style="width:1920; height:1080;">
+		</div>
 	</section>
-	<section class="bg-blue" style="width:100%; height: 100%">
+	<section>
+		<div style="text-align: center;">
 		<div class="row justify-content-center mb-5">
 			<div class="col-lg-6 text-center mb-3 mb-lg-5">
 				<h3 class=" font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">How IT WORKS </h3>
@@ -206,6 +221,7 @@
 			<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 			<br><br>
 			<h8 class="col-lg-12 text-center mb-3 mb-lg-5">서비스 사용자서비스 사용자서비스 사용자</h8>
+		</div>
 		</div>
 	</section>
 
@@ -279,7 +295,9 @@
 -->
 
 	<!-- Ticket Start -->
-	<div id="roadmap" class="bg-img-cover bg-roadmap section">
+	<div id="roadmap" style="text-align: center;">
+		<img src="{% static 'bkio/img/roadmap.png' %}" style="width: 480; height: 720;">
+		<!--
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-xl-4">
@@ -289,8 +307,7 @@
 					</span>
 					<span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 title-small title-md-extra-large text-uppercase text-black">Roadmap</span>
 				</div>
-				<!-- //.col-md-6 -->
-
+		
 				<div class="col-md-8 col-xl-8 mt-4 mt-md-0" id="timeline">
 					<ul class="timeline">
 						<li class="event" data-date="2018 4Q">
@@ -339,13 +356,12 @@
 					</ul>
 
 				</div>
-				<!-- //.col-md-6 -->
+		
 			</div>
-			<!-- //.row -->
-		</div>
-		<!-- //.container -->
+				</div>
+-->
+
 	</div>
-	<!-- //Ticket End -->
 
 
 	<!-- Section - Speakers Start -->
@@ -363,7 +379,7 @@
 			<div class="row justify-content-center mb-5">
 				<div class="col-md-6 col-lg-4">
 					<figure class="m-0 position-relative">
-						<img src="{% static 'bkio/img/05%20team_1.png' %}" alt="" class="img-fluid">
+						<img src="{% static 'bkio/img/05 team_1.png' %}" alt="" class="img-fluid">
 					</figure>
 
 					<div class="py-4 text-center">
@@ -379,7 +395,7 @@
 				<!--팀-->
 				<div class="col-md-6 col-lg-4">
 					<figure class="m-0 position-relative">
-						<img src="{% static 'bkio/img/05%20team_2.png' %}" alt="" class="img-fluid">
+						<img src="{% static 'bkio/img/05 team_2.png' %}" alt="" class="img-fluid">
 					</figure>
 
 					<div class="py-4 text-center">
@@ -395,7 +411,7 @@
 
 				<div class="col-md-6 col-lg-4">
 					<figure class="m-0 position-relative">
-						<img src="{% static 'bkio/img/05%20team_3.png' %}" alt="" class="img-fluid">
+						<img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid">
 					</figure>
 
 					<div class="py-4 text-center">
