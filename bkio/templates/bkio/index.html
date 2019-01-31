@@ -11,6 +11,7 @@
 			location.href = currentAddress;
 		}
 	</script>
+
 	<script type="text/javascript" id="www-widgetapi-script" src="{% static 'bkio/js/www-widgetapi.js' %}" async=""></script>
 	<script src="https://www.youtube.com/iframe_api?v=3.1.12" id="YTAPI"></script>
 	<title>BLUEBAIKAL</title>
@@ -36,24 +37,23 @@
 
 </head>
 
-<body id="page-top" data-preloader-color="bg-white">
+<body id="page-top">
 
+	<!--
 	<div class="pace  pace-inactive pace-inactive">
 		<div class="pace-progress bg-blue" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
 			<div class="pace-progress-inner"></div>
 		</div>
 		<div class="pace-activity"></div>
 	</div>
+-->
 
-
-	<!-- Header Start -->
 	<header class="header-light fixed-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 navbar-header">
 					<a class="navbar-brand page-scroll" href="#page-top">
-						<img src="{% static 'bkio/img/logo.png' %}" alt="" class="logo-text-dark" width="200px" height="40px">
-						<img src="{% static 'bkio/img/logo.png' %}" alt="" class="logo-text-light" width="200px" height="40px">
+						<img src="{% static 'bkio/img/logo.png' %}" alt="" class="logo-text-dark" width="239px" height="46px" style="object-fit: contain;">
 					</a>
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,7 +62,6 @@
 						</span>
 					</button>
 				</div>
-				<!-- //.col-lg-3 -->
 
 				<div class="col-lg-6 navbar-wrapper justify-content-center">
 					<div id="navigation" class="navbar navbar-expand-lg">
@@ -85,87 +84,58 @@
 								</li>
 							</ul>
 						</div>
-						<!-- //.navbar-collapse -->
 					</div>
-					<!-- //.navbar -->
 				</div>
-				<!-- //.col-lg-6 -->
-				<!--
 
-      <div class="col-lg-3 d-none d-lg-block pr-lg-0">
-        <div class="align-items-center d-flex h-100 justify-content-end">
-          <a href="http://www.naver.com" class="btn btn-extra-small btn page-scroll">
-          <img src="{% static 'bkio/img/00%20main_btn_signup.png' %}"/></a>
-        </div>
-      </div>
--->
-				<!-- //.col-lg-3 -->
 			</div>
-			<!-- //.row -->
+
 		</div>
-		<!-- //.container -->
+
 	</header>
-	<section id="main" style="height: 100%; display: flex; justify-content: center; flex-direction: row;" class="bg-white">
-		<!--
-		<article class="visual">
-			<ul class="visual-img">
-				<li class="visual01"> </li>
-				<li class="visual02"> </li>
-				<li class="visual03 curr"> </li>
-				<li class="visual04"> </li>
-				<li class="visual05"> </li>
-			</ul>
-			<div class="visual-inner">
-				<p> 콘텐츠 보상 플랫폼 체인<span class="pc"> ,
-						유니오.</span> </p> <em class="mobile uunio"> <img src="/assets/v2/images/uunio.png" alt=""> </em> <strong> 당신만의 콘텐츠로 평생 수익을 실현하세요 !</strong>
-				<ul class="icon-box">
-					<li> <a href="https://www.facebook.com/UUNIOofficial/" target="_blank"> <img src="/assets/v2/images/ico_sns02-facebook.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns02-facebook-hover.svg" alt=""> </span> </a> </li>
-					<li> <a href="https://twitter.com/@UUNIO_official" target="_blank"> <img src="/assets/v2/images/ico_sns03-twitter.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns03-twitter-hover.svg" alt=""> </span> </a> </li>
-					<li> <a href="https://www.youtube.com/channel/UCC_p0Yp-7sNF_iS9SHgi-Cg" target="_blank"> <img src="/assets/v2/images/ico_sns04-youtube.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns04-youtube-hover.svg" alt=""> </span> </a> </li>
-					<li> <a href="https://steemit.com/@uunio" target="_blank"> <img src="/assets/v2/images/ico_sns06-steemit.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns06-steemit-hover.svg" alt=""> </span> </a> </li>
-					<li> <a href="https://github.com/uunio" target="_blank"> <img src="/assets/v2/images/ico_sns07-github.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns07-github-hover.svg" alt=""> </span> </a> </li>
-					<li> <a href="https://bitcointalk.org/index.php?action=profile;u=1935544;sa=showPosts" target="_blank"> <img src="/assets/v2/images/ico_sns08-bitcoin.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns08-bitcoin-hover.svg" alt=""> </span> </a> </li>
-					<li> <a href="https://www.reddit.com/user/Hello_UUNIO/" target="_blank"> <img src="/assets/v2/images/ico_sns09-reddit.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns09-reddit-hover.svg" alt=""> </span> </a> </li>
-					<li> <a href="https://www.jinse.com/search/uunio" target="_blank"> <img src="/assets/v2/images/ico_sns10-jines.svg" alt=""> <span class="over"> <img src="/assets/v2/images/ico_sns10-jines-hover.svg" alt=""> </span> </a> </li>
-				</ul>
+	<!-- Header Start -->
+
+
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="{% static 'bkio/img/main_1.png' %}" style="width: 100%; height: 100%; position: relative;" alt="First slide">
+
 			</div>
-		</article>
--->
-
-		<div style="float: left; width: 30%; height: 100%">
-			<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Our 100 BAIKAL Welcome gift to YOU.</h2>
-			<br>
-			<h4 class="col-lg-12 text-center mb-3 mb-lg-5">Sign up for Baikal, and receive 100 BAIKAL tokens. That's 100 BAIKAL just for enjoying entertainment. Simply stream another 100 BAIKAL-worth of content to release it.
-			</h4>
-
-			<button type="button" style="background-color: white" class="page-scroll btn btn btn-small btn-lg-large mt-4 mx-0" data-toggle="modal" data-target="#LoginModal"><img src="{% static 'bkio/img/00%20main_btn_signup.png' %}" /></button>
-			<div class="modal fade" id="LoginModal" role="dialog">
-				<div class="modal-dialog">
-					<img src="{% static 'bkio/img/modalview.png' %}" style="height: 480px; width: 720px;" />
-				</div>
+			<div class="carousel-item">
+				<img src="{% static 'bkio/img/main_2.png' %}" style="width: 100%; height: 100%; position: relative;" alt="Second slide">
 			</div>
-		</div>
+			<div class="carousel-item">
+				<img src="{% static 'bkio/img/main_3.png' %}" style="width: 100%; height: 100%; position: relative;" alt="Third slide">
+			</div>
+			<div style="padding: 75px 10px; position: absolute; top: 10%; left: 10%;">
+				<h4>
+					Join Blue Baikal<br>and receive <strong style="color: blue">100 BBK</strong>!<br>
+				</h4>
+				<h6>
+					<br>
+					Join Blue Baikal and receive<br>100BBK Tokens. Use them to<br>enjoy contents you want.
+				</h6>
+				<br>
+				<a data-toggle="modal" href="#LoginModal" style="width: auto; height: auto;"><img src="{% static 'bkio/img/00%20main_btn_signup.png' %}" />
+				</a>
 
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="float: right; width: 70%; height: 100%">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block w-100" src="{% static 'bkio/img/main_1.png' %}" style="width: 100%; height: 100%" alt="First slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{% static 'bkio/img/main_2.png' %}" style="width: 100%; height: 100%" alt="Second slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{% static 'bkio/img/main_3.png' %}" style="width: 100%; height: 100%" alt="Third slide">
+				<div class="modal fade" id="LoginModal" role="dialog">
+					<div class="modal-dialog">
+						<img src="{% static 'bkio/img/modalview.png' %}" style="height: 480px; width: 720px;" />
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-	</section>
+
 	<!--
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" ></span>
@@ -182,8 +152,7 @@
 -->
 
 	<!--      -->
-
-	<section id="project" style="background-color: ghostwhite">
+	<section id="project" style="background-color: rgb(247,247,247,1);">
 
 		<div class="row justify-content-center mb-5">
 			<div class="col-lg-6 text-center mb-3 mb-lg-5">
@@ -192,41 +161,51 @@
 		</div>
 
 		<container style="display: flex; justify-content: center; flex-direction: row;">
-			<div>
-				<img src="{% static 'bkio/img/01 project_icon_1.png' %}" style="width: 142px; height: 142px;">
-			</div>&emsp;&emsp;&emsp;
-			<div>
-				<img src="{% static 'bkio/img/01 project_icon_2.png' %}" style="width: 142px; height: 142px;">
-			</div>&emsp;&emsp;&emsp;
-			<div>
-				<img src="{% static 'bkio/img/01 project_icon_3.png' %}" style="width: 142px; height: 142px;">
-			</div>&emsp;&emsp;&emsp;
-			<div>
-				<img src="{% static 'bkio/img/01 project_icon_4.png' %}" style="width: 142px; height: 142px;">
-			</div>&emsp;&emsp;&emsp;
-			<div>
-				<img src="{% static 'bkio/img/01 project_icon_5.png' %}" style="width: 142px; height: 142px;">
+			<div style="text-align: center">
+				<h6><strong>Movie</strong></h6>
+				<br>
+				<img src="{% static 'bkio/img/01 project_icon_1.png' %}" style="width: 70%; height: 70%;">
+			</div>&emsp;
+			<div style="text-align: center">
+				<h6><strong>TV</strong></h6>
+				<br>
+				<img src="{% static 'bkio/img/01 project_icon_2.png' %}" style="width: 70%; height: 70%;">
+			</div>&emsp;
+			<div style="text-align: center">
+				<h6><strong>Game</strong></h6>
+				<br>
+				<img src="{% static 'bkio/img/01 project_icon_3.png' %}" style="width: 70%; height: 70%;">
+			</div>&emsp;
+			<div style="text-align: center">
+				<h6><strong>Music</strong></h6>
+				<br>
+				<img src="{% static 'bkio/img/01 project_icon_4.png' %}" style="width: 70%; height: 70%;">
+			</div>&emsp;
+			<div style="text-align: center">
+				<h6><strong>Book</strong></h6>
+				<br>
+				<img src="{% static 'bkio/img/01 project_icon_5.png' %}" style="width: 70%; height: 70%;">
 			</div>
 		</container>
 		<br>
 		<br>
 		<br>
 		<container style="display: flex; justify-content: center; flex-direction: row;">
-		<div>
-		<img src="{% static 'bkio/img/01_2 intro_service.png' %}" style="width: 533px; height: 477px;"/>
-		</div>&emsp;&emsp;&emsp;&emsp;&emsp;
-		<div>
-			<img src="{% static 'bkio/img/project_text.png' %}" style="width: auto; height: auto;"/>
-		</div>
+			<div>
+				<img src="{% static 'bkio/img/01_2 intro_service.png' %}" style="width: 70%; height: 70%;" />
+			</div>&emsp;
+			<div>
+				<img src="{% static 'bkio/img/project_text.png' %}" style="width: auto; height: auto;" />
+			</div>
 		</container>
-		
+
 		<!--
 		<div style="text-align: center;">
 			<img src="{% static 'bkio/img/project.png' %}" style="width:1920; height:1080;">
 		</div>
 -->
 	</section>
-	<section > 
+	<section>
 		<div style="text-align: center;">
 			<div class="row justify-content-center mb-5">
 				<div class="col-lg-6 text-center mb-3 mb-lg-5">
@@ -234,29 +213,29 @@
 				</div>
 			</div>
 			<container style="display: flex; justify-content: center; flex-direction: row;">
-			<div >
-				<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Consumers</h2>
-<!--				<iframe class="youtube" src="https://www.youtube.com/embed/Ey68aMOV9gc" style="width: 100%;height: 300px" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-				<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 350px; height: 198px;"/>
-				<br><br>
-				<h8 class="col-lg-12 text-center mb-3 mb-lg-5">Access wide range of contents<br> and receive BBK Tokens to purchase<br> and invest in other contents.</h8>
-			</div>
-			&emsp;&emsp;&emsp;
-			<div >
-				<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Influencers</h2>
-<!--				<iframe class="youtube" src="https://www.youtube.com/embed/3LLjrHb5_bo" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-				<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 350px; height: 198px;"/>
-				<br><br>
-				<h8 class="col-lg-12 text-center mb-3 mb-lg-5">Become a trend in<br> Entertainment field. Blue Baikal<br> is always here for you.</h8>
-			</div>
-			&emsp;&emsp;&emsp;
-			<div >
-				<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Creators</h2>
-<!--				<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-				<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 350px; height: 198px;"/>
-				<br><br>
-				<h8 class="col-lg-12 text-center mb-3 mb-lg-5">Baikalians are here for you<br> from getting investments<br> to content sales.</h8>
-			</div>
+				<div>
+					<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Consumers</h2>
+					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/Ey68aMOV9gc" style="width: 100%;height: 300px" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 70%; height: 70%;" />
+					<br><br>
+					<h8 class="col-lg-12 text-center mb-3 mb-lg-5">Access wide range of contents<br> and receive BBK Tokens to purchase<br> and invest in other contents.</h8>
+				</div>
+				&emsp;&emsp;&emsp;
+				<div>
+					<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Influencers</h2>
+					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/3LLjrHb5_bo" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 70%; height: 70%;" />
+					<br><br>
+					<h8 class="col-lg-12 text-center mb-3 mb-lg-5">Become a trend in<br> Entertainment field. Blue Baikal<br> is always here for you.</h8>
+				</div>
+				&emsp;&emsp;&emsp;
+				<div>
+					<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Creators</h2>
+					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 70%; height: 70%;" />
+					<br><br>
+					<h8 class="col-lg-12 text-center mb-3 mb-lg-5">Baikalians are here for you<br> from getting investments<br> to content sales.</h8>
+				</div>
 			</container>
 		</div>
 	</section>
@@ -265,17 +244,17 @@
 		<div style="display: flex;">
 			<h5 style="color: white">WHITE PAPER</h5>
 			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 65px; height: 20px;"/></a>
+			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 65px; height: 20px;" /></a>
 			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 65px; height: 20px;"/></a>
+			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 65px; height: 20px;" /></a>
 		</div>
 		&emsp;&emsp;&emsp;&emsp;
 		<div style="display: flex;">
 			<h5 style="color: white">ONE PAGER</h5>
 			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 65px; height: 20px;"/></a>
+			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 65px; height: 20px;" /></a>
 			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 65px; height: 20px;"/></a>
+			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 65px; height: 20px;" /></a>
 		</div>
 	</container><br><br>
 	<!--
@@ -824,21 +803,20 @@
 		<div class="container">
 			<div class="row justify-content-center mb-0">
 				<div class="col-lg-6 text-center mb-3 mb-lg-5">
-					<h3 class="font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">Contact Us</h3>
+					<h3 class="font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">Contact</h3>
 				</div>
 				<!-- //.col-lg-6 -->
 			</div>
 			<!-- //.row -->
 
-			<form action="contact/send_mail_ticket.php" method="post" id="myform" name="myform" class="mt-4">
+			<form action="https://formspree.io/ysh827@goboogiegames.com" method="post" id="myform" name="myform" class="mt-4">
 				<div class="form-group">
 					<input type="text" id="name" name="name" class="font-alt form-control required" placeholder="name">
 				</div>
 
 				<div class="form-group">
-					<input type="email" id="email" name="email" class="font-alt form-control required email" placeholder="Your Email">
+					<input type="email" id="email" name="email" class="font-alt form-control required email" placeholder="Email">
 				</div>
-
 				<div class="form-group">
 					<input type="text" id="subject" name="subject" class="font-alt form-control required" placeholder="subject">
 				</div>
@@ -849,11 +827,14 @@
 
             <span class="d-block font-alt font-w-600 letter-spacing-1 text-extra-small text-uppercase">*Please complete all fields correctly</span>
 -->
-				<button type="submit" id="c_submit" name="c_submit" class="btn btn-small btn-lg-medium btn-blue mt-4">Submit</button>
+				<div style="text-align: center;">
+				<div class="submit-wrap">
+					<input type="submit" value="&nbsp&nbsp;Send&nbsp&nbsp;" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); color: white; font-size: 30px; font-family:sans-serif; border: none; white-space: nowrap; border-radius: 100px; text-align: center;">
+<!--					style="background-image: url({% static 'bkio/img/07 contact_btn_send.png' %})"-->
+				</div>
+				</div>
 			</form>
-
-
-
+			<br><br>
 			<div class="row">
 				<div class="col-lg-12 col-xl-12 text-center">
 					<h3 class="font-alt m-0 title-small">For more information, please contact us</h3>
@@ -903,7 +884,7 @@
 			<div class="row align-items-center">
 				<div class="col-12 text-center">
 					<div><img src="{% static 'bkio/img/07 footer_logo.png' %}" style="width:250px; height=38px">
-						<span class="font-alt font-w-600 letter-spacing-1 text-extra-small text-gray-700 text-uppercase">
+						<span class="font-alt font-w-600 letter-spacing-1 text-extra-small text-white-700 text-uppercase" style="color: white;">
 							<br>
 							<br>
 							@ 2019 BLUEBAIKAL. All rights reserved.</span>
@@ -922,10 +903,10 @@
 	<!-- Scroll to top -->
 	<div class="page-scroll scroll-to-top">
 		<a href="https://open.kakao.com">
-			<img src="{% static 'bkio/img/kakao.svg' %}">
+			<img src="{% static 'bkio/img/kakao.png' %}">
 		</a>
 		<a href="https://t.me/">
-			<img src="{% static 'bkio/img/Telegram_logo.svg' %}">
+			<img src="{% static 'bkio/img/Telegram_logo.png' %}">
 		</a>
 	</div>
 
@@ -946,6 +927,7 @@
 	<script src="{% static 'bkio/js/jquery.magnific-popup.min.js' %}"></script>
 	<script src="{% static 'bkio/js/jquery.validate.min.js' %}"></script>
 
+<!--
 	<script>
 		$(document).ready(function() {
 			$("#c_submit").on("click", function() {
@@ -953,10 +935,14 @@
 				// $('#subscribe').modal('hide');
 
 				var email = document.getElementById("email").value;
-				var firstName = document.getElementById("first_name").value;
-				var lastName = document.getElementById("last_name").value;
-				var country = document.getElementById("country").value;
-				var params = "email=" + email + "&firstName=" + firstName + "&lastName=" + lastName + "&country=" + country;
+
+				var name = document.getElementById("name").value;
+
+				var subject = document.getElementById("subject").value;
+
+				var message = document.getElementById("message").value;
+
+				var params = "email=" + email + "&name=" + name + "&subject=" + subject + "&message=" + message;
 
 				var win = window.open("/email?" + params, "popup_window", "width=500, height=300, scrollbars=no");
 
@@ -965,6 +951,7 @@
 			});
 		});
 	</script>
+-->
 
 
 	<!-- BG - Video (YouTube) -->

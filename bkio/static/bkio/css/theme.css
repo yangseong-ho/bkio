@@ -2,10 +2,10 @@
 * Google font
 */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
-
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosans.css);
 body, html {
-  font-family: 'Ubuntu', "Roboto", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   height: 100%;
 }
 
@@ -303,21 +303,7 @@ body, html {
 }
 
 
-/*
-* Box Shadow
-*/
 
-.box-shadow {
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05) !important;
-}
-
-.box-shadow-shallow {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1) !important;
-}
-
-.box-shadow-wide {
-  box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2) !important;
-}
 
 
 /*
@@ -1601,14 +1587,16 @@ label.error {
 */
 
 header, header .navbar-header, header .navbar-brand img {
+/*
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+*/
 }
 
 header .navbar-nav .nav-link {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -1617,11 +1605,11 @@ header .navbar-nav .nav-link {
 }
 
 header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  height: 80px;
+  border-bottom: 1px solid white;
+  height: 60px;
   position: relative;
   width: 100%;
-  z-index: 1020;
+  z-index: 1030;
 }
 
 header .navbar {
@@ -1675,8 +1663,7 @@ header.header-dark .navbar-wrapper {
 }
 
 header.header-light {
-  background-color: rgba(255, 255, 255, 0.98);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: white;
 }
 
 header.header-light .navbar-wrapper {
@@ -1695,9 +1682,11 @@ header.header-light .navbar-toggler {
   border-color: rgba(0, 0, 0, 0);
 }
 
+/*
 header.header-light .navbar-toggler-icon {
   background-image: url("img/navbar-toggler-light.svg");
 }
+*/
 
 header.header-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.9);
@@ -2799,12 +2788,14 @@ section, .section {
   /** Header & Navigation */
   
   header {
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background-color: white! important;
   }
 
+/*
   header.header-light {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
+*/
 
   header .navbar-wrapper {
     background-color: transparent !important;
@@ -2826,9 +2817,9 @@ section, .section {
   header .navbar-nav .nav-item {
     padding: 1rem !important;
   }
-
+/* here color*/
   header .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: black! important;
     padding: 0 !important;
   }
 
@@ -2842,13 +2833,13 @@ section, .section {
     position: absolute;
     width: 100%;
   }
-
+/*here*/
   header .navbar-nav .nav-link.active:before {
     background-color: white !important;
   }
-
+/*here hover*/
   header .navbar-nav .nav-link:hover {
-    color: white !important;
+    color: darkblue! important;
   }
 
   header.shrink {
@@ -3073,7 +3064,7 @@ section, .section {
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(210, 210, 210, 0.8);
+    background: rgba(255, 255, 255, 255);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
