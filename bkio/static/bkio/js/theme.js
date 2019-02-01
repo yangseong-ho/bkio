@@ -13,7 +13,7 @@
         $pageScrollLink = $('.page-scroll'),
         $galleryGrid = $('.gallery-grid'),
         $scrollToTop = $('.scroll-to-top'),
-        navHeight = 80,
+        navHeight = 60,
         navHeightShrink = 60;
       
     /** Detect mobile device */

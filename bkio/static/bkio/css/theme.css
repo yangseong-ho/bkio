@@ -1,11 +1,19 @@
 /*
 * Google font
 */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosans.css);
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900'); /* font: Poppins */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css); /* font: Nanum Square */
+	body        { font-family: 'NanumSquare', sans-serif; }
+	.normal     { font-weight: 400 }
+	.bold       { font-weight: 700 }
+	.bolder     { font-weight: 800 }
+	.light      { font-weight: 300 }
+
+
 body, html {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif;
   height: 100%;
 }
 
@@ -314,7 +322,7 @@ body, html {
   border-radius: 0.125rem;
   box-shadow: none !important;
   cursor: pointer;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.1125rem;
@@ -915,7 +923,7 @@ body, html {
   display: block;
   height: 45px;
   left: 0;
-  font-family: "FontAwesome", sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif;
   font-size: 0.875rem;
   padding: 0.875rem 1.25rem;
   position: absolute;
@@ -1281,11 +1289,11 @@ li.checkmark-yellow:before {
 */
 
 .font-base {
-  font-family: 'Ubuntu', "Roboto", sans-serif !important;
+    font-family: 'Poppins', 'NanumSquare', sans-serif !important;
 }
 
 .font-alt {
-  font-family: 'Ubuntu', sans-serif !important;
+    font-family: 'Poppins', 'NanumSquare', sans-serif !important;
 }
 
 
@@ -1311,14 +1319,16 @@ li.checkmark-yellow:before {
 */
 
 input[type="email"].form-control, input[type="text"].form-control, textarea.form-control, select.form-control {
-  border-color: #adb5bd !important;
+  columns: 40;
+  border-color: lightskyblue! important;
   border-radius: 2px;
   color: #495057;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
   font-size: 0.6875rem !important;
   font-weight: 600;
   letter-spacing: 0.0625rem !important;
   padding: 0.875rem 1rem;
+  text-transform: none !important;
 }
 
 input[type="email"].form-control:focus, input[type="text"].form-control:focus, textarea.form-control:focus, select.form-control:focus {
@@ -1331,7 +1341,6 @@ input.error[type="email"].form-control, input.error[type="text"].form-control, t
 
 select.form-control {
   height: auto !important;
-  text-transform: uppercase;
 }
 
 label.error {
@@ -1348,7 +1357,7 @@ label.error {
 
 ::-webkit-input-placeholder {
   color: #495057 !important;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
   font-weight: 600;
   font-size: 0.6875rem !important;
   letter-spacing: 0.0625rem !important;
@@ -1359,7 +1368,7 @@ label.error {
 
 :-moz-placeholder {
   color: #495057 !important;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
   font-weight: 600;
   font-size: 0.6875rem !important;
   letter-spacing: 0.0625rem !important;
@@ -1370,7 +1379,7 @@ label.error {
 
 :-ms-input-placeholder {
   color: #495057 !important;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
   font-weight: 600;
   font-size: 0.6875rem !important;
   letter-spacing: 0.0625rem !important;
@@ -1461,7 +1470,7 @@ label.error {
 }
 
 .mfp-title, .mfp-counter {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -1596,12 +1605,11 @@ header, header .navbar-header, header .navbar-brand img {
 }
 
 header .navbar-nav .nav-link {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.0625rem;
-  position: relative;
-  text-transform: uppercase;
+	font-size: 0.85rem;
+	font-weight: 500;
+	letter-spacing: 0.02rem;
+	position: relative;
+	text-transform: uppercase;
 }
 
 header {
@@ -1699,7 +1707,7 @@ header.header-light .navbar-nav .nav-link {
 
 label, .label {
   border-radius: 2px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -2060,7 +2068,7 @@ label, .label {
 */
 
 section, .section {
-  padding: 80px 0px;
+  padding: 100px 0px;
 }
 
 
@@ -2294,7 +2302,7 @@ section, .section {
 }
 
 .title-extra-large-2 {
-  font-size: 2.75rem !important;
+  font-size: 2.55rem !important;
   line-height: 3.375rem !important;
 }
 
@@ -2606,7 +2614,7 @@ section, .section {
   /** Section */
   
   section, .section {
-    padding: 110px 0;
+    /*padding: 110px 0;*/
   }
 
   
@@ -2821,8 +2829,9 @@ section, .section {
   header .navbar-nav .nav-link {
     color: black! important;
     padding: 0 !important;
+      
   }
-
+/*  underline problem
   header .navbar-nav .nav-link:before {
     bottom: 0;
     content: '';
@@ -2831,8 +2840,9 @@ section, .section {
     left: 0;
     margin-bottom: -3px;
     position: absolute;
-    width: 100%;
+    width: 18%;
   }
+*/
 /*here*/
   header .navbar-nav .nav-link.active:before {
     background-color: white !important;
@@ -2870,7 +2880,7 @@ section, .section {
   }
 
   header.shrink.header-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 0.9) !important;
+    color: rgb(27, 26, 26, 0.9) !important;
   }
 
   header.shrink.header-light .navbar-nav .nav-link.active:before {
@@ -2898,7 +2908,7 @@ section, .section {
   /** Section */
   
   section, .section {
-    padding: 140px 0;
+    /*padding: 140px 0;*/
   }
 
   
@@ -3074,7 +3084,7 @@ section, .section {
   /** Section */
   
   section, .section {
-    padding: 150px 0;
+    /*padding: 150px 0;*/
   }
 
   

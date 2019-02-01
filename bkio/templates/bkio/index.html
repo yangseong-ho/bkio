@@ -3,43 +3,42 @@
 <html lang="en">
 
 <head>
-	<script language="JavaScript" type="text/javascript">
-		var host = location.host.toLowerCase();
-		var currentAddress = location.href;
-		if (host.indexOf("www") == -1 && host.indexOf("kr") == -1 && host.indexOf("en") == -1) {
-			currentAddress = currentAddress.replace("//", "//www.");
-			location.href = currentAddress;
-		}
-	</script>
+    <script language="JavaScript" type="text/javascript">
+        var host = location.host.toLowerCase();
+        var currentAddress = location.href;
+        if (host.indexOf("www") == -1 && host.indexOf("kr") == -1 && host.indexOf("en") == -1) {
+            currentAddress = currentAddress.replace("//", "//www.");
+            location.href = currentAddress;
+        }
+    </script>
+    <script type="text/javascript" id="www-widgetapi-script" src="{% static 'bkio/js/www-widgetapi.js' %}" async=""></script>
+    <script src="https://www.youtube.com/iframe_api?v=3.1.12" id="YTAPI"></script>
+    <title>BLUEBAIKAL</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" acontent="IE=edge">
+    <!--파비콘-->
+    <link rel="shortcut icon" type="image/png" href="{% static 'bkio/img/favicon.png' %}" />
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'bkio/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
 
-	<script type="text/javascript" id="www-widgetapi-script" src="{% static 'bkio/js/www-widgetapi.js' %}" async=""></script>
-	<script src="https://www.youtube.com/iframe_api?v=3.1.12" id="YTAPI"></script>
-	<title>BLUEBAIKAL</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" acontent="IE=edge">
-	<!--파비콘-->
-	<link rel="shortcut icon" type="image/png" href="{% static 'bkio/img/favicon.png' %}" />
-	<!-- Bootstrap CSS -->
-	<link href="{% static 'bkio/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- Font Awesome CSS -->
+    <link href="{% static 'bkio/css/notosanskr.css' %}" rel="stylesheet" type="text/css">
 
-	<!-- Font Awesome CSS -->
-	<link href="{% static 'bkio/css/notosanskr.css' %}" rel="stylesheet" type="text/css">
-
-	<!-- Include all css plugins (below), or include individual files as needed -->
-	<link href="{% static 'bkio/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
-	<!--	<link href="{% static 'bkio/css/commonv7.css' %}" rel="stylesheet" type="text/css">-->
-	<!-- Theme CSS -->
-	<link href="{% static 'bkio/css/theme.css' %}" rel="stylesheet" type="text/css">
-	<link href="{% static 'bkio/css/styles.css' %}" rel="stylesheet" type="text/css">
+    <!-- Include all css plugins (below), or include individual files as needed -->
+    <link href="{% static 'bkio/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    <!--	<link href="{% static 'bkio/css/commonv7.css' %}" rel="stylesheet" type="text/css">-->
+    <!-- Theme CSS -->
+    <link href="{% static 'bkio/css/theme.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'bkio/css/styles.css' %}" rel="stylesheet" type="text/css">
 
 </head>
 
 <body id="page-top">
 
-	<!--
+    <!--
 	<div class="pace  pace-inactive pace-inactive">
 		<div class="pace-progress bg-blue" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
 			<div class="pace-progress-inner"></div>
@@ -48,95 +47,138 @@
 	</div>
 -->
 
-	<header class="header-light fixed-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 navbar-header">
-					<a class="navbar-brand page-scroll" href="#page-top">
-						<img src="{% static 'bkio/img/logo.png' %}" alt="" class="logo-text-dark" width="239px" height="46px" style="object-fit: contain;">
-					</a>
+    <header class="header-light fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 navbar-header">
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img src="{% static 'bkio/img/logo.png' %}" alt="" class="logo-text-dark" width="239px" height="auto;" style="object-fit: contain;">
+                    </a>
 
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon">
-							<img src="{% static 'bkio/img/navbar-toggler-light.svg' %}">
-						</span>
-					</button>
-				</div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <img src="{% static 'bkio/img/navbar-toggler-light.svg' %}">
+                        </span>
+                    </button>
+                </div>
 
-				<div class="col-lg-6 navbar-wrapper justify-content-center">
-					<div id="navigation" class="navbar navbar-expand-lg">
-						<div class="collapse navbar-collapse" id="navbar-header">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link page-scroll" href="#project">Project</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link page-scroll" href="#whitepaper">Whitepaper</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link page-scroll" href="#roadmap">Roadmap</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link page-scroll" href="#team">Team</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link page-scroll" href="#contact">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+                <div class="col-lg-6 navbar-wrapper justify-content-center">
+                    <div id="navigation" class="navbar navbar-expand-lg">
+                        <div class="collapse navbar-collapse" id="navbar-header">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#project">PROJECT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#whitepaper">WHITEPAPER</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#roadmap">ROADMAP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#team">TEAM</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-			</div>
+            </div>
 
-		</div>
+        </div>
 
-	</header>
-	<!-- Header Start -->
+    </header>
+    <!-- Header Start -->
 
 
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
 
-			<div class="carousel-item active">
-				<img src="{% static 'bkio/img/main_1.png' %}" style="width: 100%; height: 100%; position: relative;" alt="First slide">
-
-			</div>
+            <div class="carousel-item active">
+                <img src="{% static 'bkio/img/main_1.png' %}" style="width: 100%; height: 100%; position: relative;" alt="First slide">
+                <div class="carousel-caption">
+                    <div class="col-lg-5">
+                        <div>
+                            <h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: black;">Social Meidia</h4>
+                        </div>
+                        <div>
+                            <h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: black;">
+                            Enjoy and share your favorite contents and receive receive rewards in BBK Tokens!
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 			<div class="carousel-item">
 				<img src="{% static 'bkio/img/main_2.png' %}" style="width: 100%; height: 100%; position: relative;" alt="Second slide">
+                <div class="carousel-caption">
+                    <div class="col-lg-5">
+                        <div>
+                            <h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: black;">Digital Content Store</h4>
+                        </div>
+                        <div>
+                            <h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: black;">
+                            Access and enjoy contents you want by using BBK Tokens from Blue Baikal!
+                            </h6>
+                        </div>
+                    </div>
+                </div>
 			</div>
+            
 			<div class="carousel-item">
 				<img src="{% static 'bkio/img/main_3.png' %}" style="width: 100%; height: 100%; position: relative;" alt="Third slide">
+                <div class="carousel-caption">
+                    <div class="col-lg-5">
+                        <div>
+                            <h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: black;">Crowdfunding</h4>
+                        </div>
+                        <div>
+                            <h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: black;">
+                            Invest to your favorite artists, creators, and projects in Blue Baikal to becom a producer!
+                            </h6>
+                        </div>
+                    </div>
+                </div>
 			</div>
-			<div style="padding: 75px 10px; position: absolute; top: 10%; left: 10%;">
-				<h4>
-					Join Blue Baikal<br>and receive <strong style="color: blue">100 BBK</strong>!<br>
-				</h4>
-				<h6>
-					<br>
-					Join Blue Baikal and receive<br>100BBK Tokens. Use them to<br>enjoy contents you want.
-				</h6>
-				<br>
-				<a data-toggle="modal" href="#LoginModal" style="width: auto; height: auto;"><img src="{% static 'bkio/img/00%20main_btn_signup.png' %}" />
-				</a>
 
-				<div class="modal fade" id="LoginModal" role="dialog">
-					<div class="modal-dialog">
-						<img src="{% static 'bkio/img/modalview.png' %}" style="height: 480px; width: 720px;" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div style="background-color: #fff; position: absolute; left: 10%; top: 20%; padding:2.8%; border-radius: 20px; width:21.5%;">
+                <div>
+                    <h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: inherit;">
+                        Join Blue Baikal and receive <span style="color:#3984ff">100BBK</span>!
+                    </h4>
+                </div>
+                <div>
+                    <h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">
+                        Join Blue Baikal and receive 100BBK Tokens. Use them to enjoy contents you want.
+                    </h6>
+                </div>
+                <a data-toggle="modal" href="#LoginModal" style="width: auto; height: auto; text-decoration:none;">
+                    <div style="border-radius:20px; width:100%; background-color: #3984ff; color: #fff; text-align:center; padding: 4%;">
+                        Start Blue Baikal
+                    </div>
+                </a>
+
+                <div class="modal fade" id="LoginModal" role="dialog" style="text-align:center;">
+                    <div class="modal-dialog">
+                        <img src="{% static 'bkio/img/modalview.png' %}" style="height: auto; width: 800px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-	<!--
+    <!--
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" ></span>
     <span class="sr-only">Previous</span>
@@ -146,118 +188,127 @@
     <span class="sr-only">Next</span>
   </a>
 -->
-	<!--
+    <!--
 	<a href="http://www.naver.com" class="page-scroll btn btn btn-small btn-lg-large mt-4 mx-0">
 	<img src="img/00%20main_btn_signup.png"/></a>
 -->
 
-	<!--      -->
-	<section id="project" style="background-color: rgb(247,247,247,1);">
+    <!--      -->
+    <section id="project" style="background-color: rgb(247,247,247,1); width:100%;">
 
-		<div class="row justify-content-center mb-5">
-			<div class="col-lg-6 text-center mb-3 mb-lg-5">
-				<h3 class=" font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">BLUE BAIKAL PROJECT</h3>
-			</div>
-		</div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <h3 class=" font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2">BLUE BAIKAL PROJECT</h3>
+            </div>
+        </div>
 
-		<container style="display: flex; justify-content: center; flex-direction: row;">
-			<div style="text-align: center">
-				<h6><strong>Movie</strong></h6>
-				<br>
-				<img src="{% static 'bkio/img/01 project_icon_1.png' %}" style="width: 70%; height: 70%;">
-			</div>&emsp;
-			<div style="text-align: center">
-				<h6><strong>TV</strong></h6>
-				<br>
-				<img src="{% static 'bkio/img/01 project_icon_2.png' %}" style="width: 70%; height: 70%;">
-			</div>&emsp;
-			<div style="text-align: center">
-				<h6><strong>Game</strong></h6>
-				<br>
-				<img src="{% static 'bkio/img/01 project_icon_3.png' %}" style="width: 70%; height: 70%;">
-			</div>&emsp;
-			<div style="text-align: center">
-				<h6><strong>Music</strong></h6>
-				<br>
-				<img src="{% static 'bkio/img/01 project_icon_4.png' %}" style="width: 70%; height: 70%;">
-			</div>&emsp;
-			<div style="text-align: center">
-				<h6><strong>Book</strong></h6>
-				<br>
-				<img src="{% static 'bkio/img/01 project_icon_5.png' %}" style="width: 70%; height: 70%;">
-			</div>
-		</container>
-		<br>
-		<br>
-		<br>
-		<container style="display: flex; justify-content: center; flex-direction: row;">
-			<div>
-				<img src="{% static 'bkio/img/01 project_eco.png' %}" style="width: 70%; height: 70%;" />
-			</div>&emsp;
-			<div>
-				<img src="{% static 'bkio/img/project_text.png' %}" style="width: 70%; height: 70%;" />
-			</div>
-		</container>
+        <container style="display:flex; justify-content:center;">
+            <div style="text-align:center; width:160px; padding:20px;">
+                <h6> Movie </h6>
+                <img style="max-width:100%; max-height:100%;" src="{% static 'bkio/img/01 project_icon_1.png' %}">
+            </div>
 
-		<!--
+            <div style="text-align:center; width:160px; padding:20px;">
+                <h6>TV</h6>
+                <img style="max-width:100%; max-height:100%;" src="{% static 'bkio/img/01 project_icon_2.png' %}">
+            </div>
+
+            <div style="text-align:center; width:160px; padding:20px;">
+                <h6>Game</h6>
+                <img style="max-width:100%; max-height:100%;" src="{% static 'bkio/img/01 project_icon_3.png' %}">
+            </div>
+
+            <div style="text-align:center; width:160px; padding:20px;">
+                <h6>Music</h6>
+                <img style="max-width:100%; max-height:100%;" src="{% static 'bkio/img/01 project_icon_4.png' %}">
+            </div>
+
+            <div style="text-align: center; width:160px; padding:20px;">
+                <h6>Book</h6>
+                <img style="max-width:100%; max-height:100%; " src="{% static 'bkio/img/01 project_icon_5.png' %}">
+            </div>
+        </container>
+
+        <container style="text-align:center; display:flex; justify-content:center; flex-direction:row; align-items: center;">
+            <div class="col-6" style="padding:100px; padding-left:200; float:left; width:50%;">
+                <img src="{% static 'bkio/img/01 project_eco.png' %}" style="max-width:100%; max-height:100%;" />
+            </div>&emsp;
+            <div class="col-6" style="padding:200px; padding-left:0; float:left; width:50%;">
+                <img src="{% static 'bkio/img/project_text.png' %}" style="max-width:100%; max-height:100%;" />
+            </div>
+        </container>
+
+        <!--
 		<div style="text-align: center;">
 			<img src="{% static 'bkio/img/project.png' %}" style="width:1920; height:1080;">
 		</div>
 -->
-	</section>
-	<section>
-		<div style="text-align: center;">
-			<div class="row justify-content-center mb-5">
-				<div class="col-lg-6 text-center mb-3 mb-lg-5">
-					<h3 class=" font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">How IT WORKS </h3>
-				</div>
-			</div>
-			<container style="display: flex; justify-content: center; flex-direction: row;">
-				<div>
-					<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Consumers</h2>
-					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/Ey68aMOV9gc" style="width: 100%;height: 300px" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 70%; height: 70%;" />
-					<br><br>
-					<h6 class="col-lg-12 text-center mb-3 mb-lg-5">Access wide range of contents and receive BBK Tokens to purchase and invest in other contents.</h6>
-				</div>
-				&emsp;&emsp;&emsp;
-				<div>
-					<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Influencers</h2>
-					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/3LLjrHb5_bo" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 70%; height: 70%;" />
-					<br><br>
-					<h6 class="col-lg-12 text-center mb-3 mb-lg-5">Become a trend in Entertainment field. Blue Baikal is always here for you.</h6>
-				</div>
-				&emsp;&emsp;&emsp;
-				<div>
-					<h2 class="col-lg-12 text-center mb-3 mb-lg-5">Creators</h2>
-					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="width: 70%; height: 70%;" />
-					<br><br>
-					<h6 class="col-lg-12 text-center mb-3 mb-lg-5">Baikalians are here for you from getting investments to content sales.</h6>
-				</div>
-			</container>
-		</div>
-	</section>
+    </section>
+    <section style="width: " class="col-lg-12 col-sm-1">
+        <div style="text-align: center;">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center mb-3 mb-lg-5">
+                    <h3 class="font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2">How IT WORKS </h3>
+                </div>
+            </div>
+            <container style="display: flex; flex-direction:row; justify-content:center;">
+                <div class="" style="width:370px; margin:20px">
+                    <h3 class="text-center mb-2 mb-lg-4">Consumers</h3>
+                    <!--				<iframe class="youtube" src="https://www.youtube.com/embed/Ey68aMOV9gc" style="width: 100%;height: 300px" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+                    <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
 
-	<container id="whitepaper" style="display: flex; justify-content: center; flex-direction: row; align-items: center; height: 50px; background-image: url({% static 'bkio/img/07 footer_bg.png' %});">
-		<div style="display: flex;">
-			<h5 style="color: white">WHITE PAPER</h5>
-			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 65px; height: 20px;" /></a>
-			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 65px; height: 20px;" /></a>
-		</div>
-		&emsp;&emsp;&emsp;&emsp;
-		<div style="display: flex;">
-			<h5 style="color: white">ONE PAGER</h5>
-			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 65px; height: 20px;" /></a>
-			&emsp;
-			<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 65px; height: 20px;" /></a>
-		</div>
-	</container><br><br>
-	<!--
+                    <p class="mt-4" style="padding:2%;">
+                        <span class="text-center" style="font-size: 1.1rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">Access wide range of contents and receive BBK Tokens to purchase and invest in other contents.
+                        </span>
+                    </p>
+                </div>
+
+                <div class="" style="width:370px; margin:20px">
+                    <h3 class="text-center mb-2 mb-lg-4">Influencers</h3>
+                    <!--				<iframe class="youtube" src="https://www.youtube.com/embed/3LLjrHb5_bo" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+                    <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
+
+                    <p class="mt-4" style="padding:2%;">
+                        <span class="text-center" style="font-size: 1.1rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">Become a trend in Entertainment field. Blue Baikal is always here for you.</span>
+                    </p>
+                </div>
+
+                <div class="" style="width:370px; margin:20px">
+                    <h3 class="text-center mb-2 mb-lg-4">Creators</h3>
+                    <!--				<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+                    <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
+
+                    <p class=" mt-4" style="padding:2%;">
+                        <span class="text-center" style="font-size: 1.1rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">
+                            Baikalians are here for you from getting investments to content sales
+                        </span>
+                    </p>
+
+                </div>
+            </container>
+        </div>
+    </section>
+
+    <container id="whitepaper" style="display: flex; justify-content: center; flex-direction: row; align-items: center; width: 100%; height:100px; background-image: url({% static 'bkio/img/03 whitepaper_bg.png' %}); background-size:cover;">
+        <div style="display: flex;">
+            <span style="color: white; font-size:1.25rem;">WHITE PAPER</span>
+            &emsp;&emsp;
+            <a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 100px; height:auto;" /></a>
+            &emsp;
+            <a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 100px; height:auto;" /></a>
+        </div>
+        &emsp;&emsp;
+        <span style="color: #ccc; font-size:1rem; font-weight:100">|</span>
+        &emsp;&emsp;
+        <div style="display: flex;">
+            <span style="color: white; font-size:1.25rem;">ONE PAGER</span>
+            &emsp;&emsp;
+            <a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="width: 100px; height:auto;" /></a>
+            &emsp;
+            <a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="width: 100px; height:auto;" /></a>
+        </div>
+    </container>
+    <!--
 
 <section id="whitepaper">
 	<span>
@@ -273,7 +324,7 @@
 </section>
 -->
 
-	<!-- white paper
+    <!-- white paper
  <section id="whitepaper" class="bg-img-cover bg-overlay-black-5">
   <div class="container">
     <div class="row justify-content-center justify-content-lg-end no-gutters">
@@ -308,10 +359,13 @@
 
 -->
 
-	<!-- Ticket Start -->
-	<div id="roadmap" style="text-align: center;">
-		<img src="{% static 'bkio/img/roadmap.png' %}" style="width: 480px; height: 720px;">
-		<!--
+    <!-- Ticket Start -->
+    <section id="roadmap" class="mb-5" style="text-align: center;">
+        <div class="col-lg-12 text-center mb-3 mb-lg-5" style="width:100%;">
+            <h3 class="font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2"> ROADMAP </h3>
+        </div>
+        <img src="{% static 'bkio/img/roadmap.png' %}" style="width: 800px; height: auto;">
+        <!--
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-xl-4">
@@ -375,193 +429,80 @@
 				</div>
 -->
 
-	</div>
+    </section>
 
 
-	<!-- Section - Speakers Start -->
-	<section id="team" style="background-color: beige">
-		<div class="container">
-			<div class="row justify-content-center mb-5">
-				<div class="col-lg-6 text-center mb-3 mb-lg-5">
-					<h3 class="font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">Team</h3>
+    <!-- Section - Speakers Start -->
+    <section id="team" class="col-lg-12 col-sm-1" style="background-color: rgb(247,247,247,1);">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 text-center mb-3 mb-lg-5">
+                    <h3 class=" font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2">Team</h3>
 
-				</div>
-				<!-- //.col-lg-6 -->
-			</div>
-			<!-- //.row -->
+                </div>
+                <!-- //.col-lg-6 -->
+            </div>
+            <!-- //.row -->
 
-			<div class="row justify-content-center mb-5">
-				<div class="col-md-6 col-lg-4">
-					<figure class="m-0 position-relative">
-						<img src="{% static 'bkio/img/05 team_1.png' %}" alt="" class="img-fluid">
-					</figure>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-lg-4 col-sm-1" style="width:30%; padding-right:5%; padding-left:5%;">
+                    <figure class="m-0 position-relative">
+                        <img src="{% static 'bkio/img/05 team_1.png' %}" alt="" class="img-fluid">
+                    </figure>
 
-					<div class="py-4 text-center">
-						<span class="d-block font-alt font-w-600 letter-spacing-1 text-extra-large">Clark Jang</span>
-						<span class="d-block font-alt font-w-400 text-gray-800 text-medium">
-							<br> <strong>BlueBaikal<br>Project Owner</strong>
-						</span>
-					</div>
-					<!-- //.py-4 -->
-				</div>
-				<!-- //.col-md-6 -->
-				<!--팀-->
-				<div class="col-md-6 col-lg-4">
-					<figure class="m-0 position-relative">
-						<img src="{% static 'bkio/img/05 team_2.png' %}" alt="" class="img-fluid">
-					</figure>
+                    <div class="py-4 text-center">
+                        <h3 class="text-center mt-4 mb-3">
+                            Clark Jang
+                        </h3>
+                        <span class="d-block font-alt font-w-200 text-large" style="font-size:1.5rem; color:#0040af;">
+                            Blue Baikal
+                            <br>
+                            Project Owner
+                        </span>
+                    </div>
+                    <!-- //.py-4 -->
+                </div>
+                <!-- //.col-md-6 -->
+                <!--팀-->
+                <div class="col-md-4 col-lg-4 col-sm-1" style="width:30%; padding-right:5%; padding-left:5%;">
+                    <figure class="m-0 position-relative">
+                        <img src="{% static 'bkio/img/05 team_2.png' %}" alt="" class="img-fluid">
+                    </figure>
 
-					<div class="py-4 text-center">
-						<span class="d-block font-alt font-w-600 letter-spacing-1 text-extra-large">Eric Kim </span>
-						<span class="d-block font-alt font-w-400 text-gray-800 text-medium">
-							<br> <strong>Strategic Business <br>Development</strong>
-						</span>
-					</div>
-					<!-- //.py-4 -->
-				</div>
-				<!-- //.col-md-6 -->
+                    <div class="py-4 text-center">
+                        <h3 class="text-center mt-4 mb-3">
+                            Eric Kim
+                        </h3>
+                        <span class="d-block font-alt font-w-200 text-large" style="font-size:1.5rem; color:#0040af;">
+                            Strategic Business
+                            <br>
+                            Development
+                        </span>
+                    </div>
+                    <!-- //.py-4 -->
+                </div>
+                <!-- //.col-md-6 -->
 
-				<div class="col-md-6 col-lg-4">
-					<figure class="m-0 position-relative">
-						<img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid">
-					</figure>
+                <div class="col-md-4 col-lg-4 col-sm-1" style="width:30%; padding-right:5%; padding-left:5%;">
+                    <figure class="m-0 position-relative">
+                        <img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid">
+                    </figure>
 
-					<div class="py-4 text-center">
-						<span class="d-block font-alt font-w-600 letter-spacing-1 text-extra-large">Sean Choi </span>
-						<span class="d-block font-alt font-w-400 text-gray-800 text-medium"> <br> <strong>Global Service<br>Business</strong>
-						</span>
-					</div>
-					<!-- //.py-4 -->
-				</div>
-				<!-- //.col-md-6 -->
-				<!-- 팀원
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="http://www.level.foundation/static/images/team-3.jpg" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Yi, Yoonsu</figcaption>
-        </figure>
+                    <div class="py-4 text-center">
+                        <h3 class="text-center mt-4 mb-3">
+                            Sean Choi
+                        </h3>
+                        <span class="d-block font-alt font-w-200 text-large" style="font-size:1.5rem; color:#0040af;">
+                            Global Service
+                            <br>
+                            Business
+                        </span>
+                    </div>
+                    <!-- //.py-4 -->
+                </div>
+                <!-- //.col-md-6 -->
 
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Yi, Yoonsu</span>
-          <span class="">CPO</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small"> Research Lead of DIGXTAL <br>
-                        (ex) CJ E&amp;M, SK Telecom, KAIST (M.S.) <br>Yonsei Univ. (B.S.)</span>
-        </div>
-
-      </div>
-      
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="http://www.level.foundation/static/images/team-5.jpg" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Yu, Sangwon</figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Yu, Sangwon</span>
-          <span class="">CXO</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">
-                        Team Leader of Bloter&amp;media inc.<br>
-                        (ex) Designhouse, Skcomms, Kookmin Univ. (Ph.D.)<br>
-                        New York Univ. (MPS), Seoul Nat’l Univ. (B.S.)</span>
-        </div>
-
-      </div>
-      
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="http://www.level.foundation/static/images/team-4.jpg" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Lee, Minhyun</figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Lee, Minhyun</span>
-          <span class="">Auditor</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">COO of Merkline, CEO of Chainstream  </span>
-        </div>
-        
-      </div>
-      
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="http://www.level.foundation/static/images/team-7.jpg" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">KIM, GWANGCHEON</figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">KIM, GWANGCHEON</span>
-          <span class="">Technical Lead</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">
-                        Researcher of M-BRANE Lab<br>
-                        Principal Research Engineer of E4NET<br>
-                        Sogang Univ. (B.S.)</span>
-        </div>
-        
-      </div>
-      
-
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="http://www.level.foundation/static/images/team-8.jpg" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">LEE, DEOKHEE</figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">LEE, DEOKHEE</span>
-          <span class="">Communication Manager</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">
-                        Sungkyunkwan Univ (B.S.)</span>
-        </div>
-        
-      </div>
-      
-
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="http://www.level.foundation/static/images/team-9.jpg" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">SEO, YEONGEUN</figcaption>
-        </figure>
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">SEO, YEONGEUN</span>
-          <span class="">Developer</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">
-                        Researcher of M-BRANE Lab<br>
-                        Senior Research Engineer of E4NET<br>
-                        Ajou Univ. (M.S.)</span>
-        </div>
-        
-      </div>
-      
-
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="http://www.level.foundation/static/images/team-10.jpg" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">AHN, SANGJUNE</figcaption>
-        </figure>
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">AHN, SANGJUNE</span>
-          <span class="">Developer</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">
-                        Researcher of M-BRANE Lab<br>
-                        Associate Research Engineer of E4NET<br>
-                        Univ. of Newcastle (B.S.)</span>
-        </div>
-        
-      </div>
-      
-
-      <div class="col-md-6 col-lg-4">
-
-      </div>
-      
-
-      <div class="col-md-6 col-lg-4">
-
-      </div>
-      
-
-    </div>
-    -->
-				<!-- //. advisors
+                <!-- //. advisors
     <div class="row justify-content-center mb-5">
       <div class="col-lg-6 text-center mb-3 mb-lg-5">
         <h3 class="font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">Advisors</h3>
@@ -598,71 +539,20 @@
         </div>
         
       </div>
-
-
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="06%20partners_3.png" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Lee, Will</figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Lee, Will</span>
-          <span class="">CEO of Bluewhale</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">CEO and Co-founder of Bluewhale Foundation </span>
-        </div>
-        
-      </div>
-
-
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="06%20partners_4.png" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Lee, Donghyueung</figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Lee, Donghyueung</span>
-          <span class="">Executive of Peoplesnow</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">CEO of Nowprofile, Co-Founder of Cyworld</span>
-        </div>
-        
-      </div>
-      
-
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="06%20partners_5.png" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Kang, Jungsoo</figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Kang, Jungsoo</span>
-          <span class="">CEO of Mediati</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small"></span>
-        </div>
-        
-      </div>
-      
-
-      <div class="col-md-6 col-lg-4">
-
-      </div>
-      
+            
     </div> 
     
 	-->
-			</div>
-		</div>
-		<!-- //.container -->
-	</section>
-	<!-- //Section - Speakers End -->
+            </div>
+        </div>
+        <!-- //.container -->
+    </section>
 
 
 
 
-	<!-- Section - Partners Start // 20180801 UPDATE -->
-	<!-- 파트너 임시 보류 이메일 부분까지 전부다 막>
+    <!-- Section - Partners Start // 20180801 UPDATE -->
+    <!-- 파트너 임시 보류 이메일 부분까지 전부다 막>
 <section id="partners" class="bg-white">
   <div class="container">
     <div class="row justify-content-center mb-1">
@@ -685,61 +575,19 @@
             <a href="https://gameflip.com/" target="_blank"> 
             <img src="img/06%20partners_2.png" class="p-logo img-fluid"></a>
           </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="https://www.linkedin.com/company/funizen-solutions-pvt-ltd/" target="_blank"> 
-            <img src="img/06%20partners_3.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://www3.truecorp.co.th/" target="_blank"> 
-            <img src="img/06%20partners_4.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="https://super.com/" target="_blank"> 
-            <img src="img/06%20partners_5.png" class="p-logo img-fluid"></a>
-          </div>
-          -->
-	<!-- 파트너 
+          
+    
           <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
             <a href="https://webloc.io/" target="_blank"> <img src="http://www.level.foundation/static/images/p_webloc.png" class="p-logo img-fluid"></a>
           </div>
           <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
             <a href="http://dable.io/ko/" target="_blank"> <img src="http://www.level.foundation/static/images/p_dable.png" class="p-logo img-fluid"></a>
           </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://sharehows.com/" target="_blank"> <img src="http://www.level.foundation/static/images/p_sharehows.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="https://merkline.io/" target="_blank"> <img src="http://www.level.foundation/static/images/p_merkline.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://mdesign.designhouse.co.kr/" target="_blank"> <img src="http://www.level.foundation/static/images/p_mdesign.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://happy.designhouse.co.kr/" target="_blank"> <img src="http://www.level.foundation/static/images/p_happy.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://luxury.designhouse.co.kr/" target="_blank"> <img src="http://www.level.foundation/static/images/p_luxury.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://mywedding.designhouse.co.kr/" target="_blank"> <img src="http://www.level.foundation/static/images/p_mywedding.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://themagazine.co.kr/" target="_blank"> <img src="http://www.level.foundation/static/images/p_themagazine.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://thebchain.co.kr" target="_blank"> <img src="http://www.level.foundation/static/images/p_thebchain.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://educloud.co.kr" target="_blank"> <img src="http://www.level.foundation/static/images/p_educloud.png" class="p-logo img-fluid"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 text-center mb-3">
-            <a href="http://www.techsuda.com/" target="_blank"> <img src="http://www.level.foundation/static/images/p_techsuda.png" class="p-logo img-fluid"></a>
-          </div>
-          -->
-	<!-- 이메일
+     
         </div>
       </div>
-
+    -->
+    <!-- 이메일
       <div class="col-lg-10 mt-5">
         <div class="row">
           <div class="col-lg-12 col-xl-12 text-center">
@@ -755,8 +603,8 @@
   </div>
  </section>
 -->
-	<!--white list 기능-->
-	<!--
+    <!--white list 기능-->
+    <!--
 <section id="whitelist" class="bg-img-cover bg-overlay-blue-7">
   <div class="container">
     <div class="row no-gutters">
@@ -796,111 +644,119 @@
 
 </section>
 -->
+    <section id="contact">
+        <div class="container" style="display: flex;">
+            <div>
+                <div class="col-lg-7 mb-3 mb-lg-5">
+                    <h3 class=" font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2">Contact</h3>
+                    <div class="row">
+                        <div class="col-lg-12 col-xl-12">
+                            <br>
+                            <h4 class="font-alt m-0 title-small">For more information, please contact us</h4><br>
+                            <h3 class="font-alt m-0 title-small" style="color: blue;">E-MAIL</h3>
+                            <span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 text-gray-800 text-medium">
+                                <a href="mailto:info@bluebaikal.com" class="text-black">info@bluebaikal.com </a>
+                            </span>
+                            <!--							style="display: flex; justify-content: center; flex-direction: row;"-->
+                            <br>
+                            <div style="display: flex;">
+                                <div>
+                                    <a href="https://open.kakao.com" class="text-gray-600"><img src="{% static 'bkio/img/tele.png' %}" style="width: 45px; height: 45px;">
+                                    </a>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <div>
+                                    <a href="https://t.me" class="text-gray-600">
+                                        <img src="{% static 'bkio/img/face.png' %}" style="width: 45px; height: 45px;">
+                                    </a>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <div>
+                                    <a href="https://naver.com/blog" class="text-gray-600">
+                                        <img src="{% static 'bkio/img/twt.png' %}" style="width: 45px; height: 45px;">
+                                    </a>
+                                </div>
 
+                            </div>
 
-	<!-- Section - Contact Start -->
-	<section id="contact" class="bg-white">
-		<div class="container">
-			<div class="row justify-content-center mb-0">
-				<div class="col-lg-6 text-center mb-3 mb-lg-5">
-					<h3 class="font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">Contact</h3>
-				</div>
-				<!-- //.col-lg-6 -->
-			</div>
-			<!-- //.row -->
+                        </div>
 
-			<form action="https://formspree.io/ysh827@goboogiegames.com" method="post" id="myform" name="myform" class="mt-4">
-				<div class="form-group">
-					<input type="text" id="name" name="name" class="font-alt form-control required" placeholder="name">
-				</div>
+                    </div>
+                </div>
+            </div>
+            <!--			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <div style="height: auto; width: 600px;border:2.2px solid rgb(2,25,150,0.9); border-bottom-left-radius: 75px; border-bottom-right-radius: 75px; border-top-right-radius: 75px; display: flex; justify-content: center; flex-direction: row;">
+                <form action="https://formspree.io/ysh827@goboogiegames.com" method="post" id="myform" name="myform">
+                    <br><br><br>
 
-				<div class="form-group">
-					<input type="email" id="email" name="email" class="font-alt form-control required email" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<input type="text" id="subject" name="subject" class="font-alt form-control required" placeholder="subject">
-				</div>
-				<div class="form-group">
-					<input type="text" id="message" name="message" class="font-alt form-control required" style="height: 300px" placeholder="message">
-				</div>
-				<!--
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control required name" placeholder="name" style="border-top: 0; border-left: 0; border-right: 0; border-color: lightskyblue; width: 100%; height: 20px;">
+                    </div><br>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control required email" placeholder="Email" style="width: auto; border-top: 0; border-left: 0; border-color: lightskyblue; border-right: 0; width: 100%; height: 20px;">
+                    </div><br>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" class="form-control required subject" placeholder="subject" style="border-top: 0; border-left: 0; border-right: 0; border-color: lightskyblue; width: 100%; height: 20px;">
+                    </div><br>
+                    <div class="form-group">
+                        <!--						<div style="font-family: sans-serif ; color: darkgray;"><strong>Message</strong></div>-->
+
+                        <textarea type="textarea" cols="40" rows="8" id="message" name="message" class="form-control required message" style="height: 280px; width: 100%; border-color: lightskyblue; border-radius: 20px;" placeholder="Message"></textarea>
+                    </div>
+                    <!--
 
             <span class="d-block font-alt font-w-600 letter-spacing-1 text-extra-small text-uppercase">*Please complete all fields correctly</span>
 -->
-				<div style="text-align: center;">
-				<div class="submit-wrap">
-					<input type="submit" value="&nbsp&nbsp;Send&nbsp&nbsp;" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); color: white; font-size: 30px; font-family:sans-serif; border: none; white-space: nowrap; border-radius: 100px; text-align: center;">
-<!--					style="background-image: url({% static 'bkio/img/07 contact_btn_send.png' %})"-->
-				</div>
-				</div>
-			</form>
-			<br><br>
-			<div class="row">
-				<div class="col-lg-12 col-xl-12 text-center">
-					<h3 class="font-alt m-0 title-small">For more information, please contact us</h3>
-					<span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 text-gray-800 text-medium">
-						<a href="mailto:support@bluebaikal.foundation" class="text-black">info@bluebaikal.com </a>
-					</span>
-				</div>
-				<!-- //.col-lg-12 -->
-			</div>
-			<!-- //.row -->
-		</div>
-		<!-- //.container -->
-	</section>
+                    <div style="text-align: center;">
+                        <div class="submit-wrap">
+                            <input type="submit" value="&nbsp&nbsp;Send&nbsp&nbsp;" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); color: white; font-size: 30px; border: none; white-space: nowrap; border-radius: 100px; text-align: center;">
+                            <!--					style="background-image: url({% static 'bkio/img/07 contact_btn_send.png' %})"-->
+                        </div>
+                    </div>
+                    <br><br><br>
+                </form>
+            </div>
+        </div>
+        <!-- //.container -->
+    </section>
 
-	<!-- Footer Start -->
-	<footer class="py-4" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); width: 100%; height: auto;">
-		<div class="container">
+    <!-- Footer Start -->
+    <footer class="py-5" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); width: 100%; height: auto;">
+        <div class="container">
 
-			<!-- //.col-md-4 -->
+            <!-- //.col-md-4 -->
 
 
-			<!--
-      <div class="col-md-8">
-        <ul class="footer-icon-social mb-0 mt-4 p-0 text-center text-md-right title-xs-small title-medium">
-          <li class="list-inline-item">
-            <a href="https://open.kakao.com" class="text-gray-600">
-            <img src="{% static 'bkio/img/kakao.svg' %}"></a>
-          </li>
-          <li class="list-inline-item pl-4">
-            <a href="https://t.me" class="text-gray-600"> 
-          	<img src="{% static 'bkio/img/Telegram_logo.svg' %}">
-           	</a>
-          </li>
-          <li class="list-inline-item pl-4">
-            <a href="https://naver.com/blog" class="text-gray-600">
-            <img src="{% static 'bkio/img/naver_blog.svg' %}"></a>
-          </li>
-          <li class="list-inline-item pl-4">
-            <a href="https://medium.com/@levelfoundation" class="text-gray-600"><i class="fa fa-medium"></i></a>
-          </li>
-        </ul>
+            <!--
+      
+        
       </div>
       
 -->
-			<!-- //.row -->
+            <!-- //.row -->
 
-			<div class="row align-items-center">
-				<div class="col-12 text-center">
-					<div><img src="{% static 'bkio/img/07 footer_logo.png' %}" style="width:250px; height=38px">
-						<span class="font-alt font-w-600 letter-spacing-1 text-extra-small text-white-700 text-uppercase" style="color: white;">
-							<br>
-							<br>
-							@ 2019 BLUEBAIKAL. All rights reserved.</span>
-					</div>
-					<!-- //.border-gray-300 -->
-				</div>
-				<!-- //.col-12 -->
-			</div>
-			<!-- //.row -->
-		</div>
-		<!-- //.container -->
-	</footer>
-	<!-- //Footer End -->
+            <div class="col-12 row align-items-center" style="width:100%;">
+                <div class="text-center">
+                    <div class="col-12">
+                        <img src="{% static 'bkio/img/07 footer_logo.png' %}" style="width:20%;">
+                        <span class="font-alt font-w-200 letter-spacing-1 text-extra-small" style="color: #ccc;">
+                            <br>
+                            <br>
+                            &copy; 2019 BLUE BAIKAL. All rights reserved.</span>
+                    </div>
+                    <!-- //.border-gray-300 -->
+                </div>
+                <!-- //.col-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </footer>
+    <!-- //Footer End -->
 
 
-	<!-- Scroll to top -->
+    <!-- Scroll to top -->
+    <!--
 	<div class="page-scroll scroll-to-top">
 		<a href="https://open.kakao.com">
 			<img src="{% static 'bkio/img/kakao.png' %}">
@@ -909,25 +765,26 @@
 			<img src="{% static 'bkio/img/Telegram_logo.png' %}">
 		</a>
 	</div>
+-->
 
 
-	<!-- Main JS -->
-	<script src="{% static 'bkio/js/jquery.min.js' %}"></script>
-	<script src="{% static 'bkio/js/popper.min.js' %}"></script>
-	<script src="{% static 'bkio/js/bootstrap.min.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'bkio/js/jquery.min.js' %}"></script>
+    <script src="{% static 'bkio/js/popper.min.js' %}"></script>
+    <script src="{% static 'bkio/js/bootstrap.min.js' %}"></script>
 
-	<!-- Include all js plugins (below) -->
-	<script src="{% static 'bkio/js/pace.min.js' %}"></script>
-	<script src="{% static 'bkio/js/jquery.easing.min.js' %}"></script>
-	<script src="{% static 'bkio/js/jquery.matchHeight.min.js' %}"></script>
-	<script src="{% static 'bkio/js/jquery.inview.min.js' %}"></script>
-	<script src="{% static 'bkio/js/jquery.countTo.js' %}"></script>
-	<script src="{% static 'bkio/js/imagesloaded.pkgd.min.js' %}"></script>
-	<script src="{% static 'bkio/js/isotope.pkgd.min.js' %}"></script>
-	<script src="{% static 'bkio/js/jquery.magnific-popup.min.js' %}"></script>
-	<script src="{% static 'bkio/js/jquery.validate.min.js' %}"></script>
+    <!-- Include all js plugins (below) -->
+    <script src="{% static 'bkio/js/pace.min.js' %}"></script>
+    <script src="{% static 'bkio/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'bkio/js/jquery.matchHeight.min.js' %}"></script>
+    <script src="{% static 'bkio/js/jquery.inview.min.js' %}"></script>
+    <script src="{% static 'bkio/js/jquery.countTo.js' %}"></script>
+    <script src="{% static 'bkio/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'bkio/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'bkio/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'bkio/js/jquery.validate.min.js' %}"></script>
 
-<!--
+    <!--
 	<script>
 		$(document).ready(function() {
 			$("#c_submit").on("click", function() {
@@ -954,11 +811,11 @@
 -->
 
 
-	<!-- BG - Video (YouTube) -->
-	<script src="{% static 'bkio/js/jquery.mb.YTPlayer.min.js' %}"></script>
+    <!-- BG - Video (YouTube) -->
+    <script src="{% static 'bkio/js/jquery.mb.YTPlayer.min.js' %}"></script>
 
-	<!-- Theme JS -->
-	<script src="{% static 'bkio/js/theme.js' %}"></script>
+    <!-- Theme JS -->
+    <script src="{% static 'bkio/js/theme.js' %}"></script>
 
 </body>
 

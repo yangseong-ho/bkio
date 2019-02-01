@@ -2,41 +2,11 @@
 * Section - Hero
 */
 
-/** BG - Static */
-#hero-bg-static {
-  background-image: url("../images/bg-hero.jpg");
-}
-
-/** BG - Parallax */
-#hero-bg-parallax > .bg-img-parallax {
-  background: url("../images/bg-hero-parallax.jpg");
-}
 
 /** BG - Slider */
-#hero-bg-slider .flickity-slider > .carousel-cell:nth-child(1) {
-  background: url("../images/bg-hero-slide-1.jpg");
-}
-
-#hero-bg-slider .flickity-slider > .carousel-cell:nth-child(2) {
-  background: url("../images/bg-hero-slide-2.jpg");
-}
-
-#hero-bg-slider .flickity-slider > .carousel-cell:nth-child(3) {
-  background: url("../images/bg-hero-slide-3.jpg");
-}
 
 /** BG - Slideshow */
-#hero-bg-slideshow .slides > .bg-img-cover:nth-child(1) {
-  background: url("../images/bg-hero-slide-1.jpg");
-}
 
-#hero-bg-slideshow .slides > .bg-img-cover:nth-child(2) {
-  background: url("../images/bg-hero-slide-2.jpg");
-}
-
-#hero-bg-slideshow .slides > .bg-img-cover:nth-child(3) {
-  background: url("../images/bg-hero-slide-3.jpg");
-}
 
 /** BG - Video */
 #hero-bg-video:before {
@@ -63,37 +33,6 @@
 }
 
 
-/*
-* Section - Venue
-*/
-
-
-/*
-* Promo
-*/
-
-#promo {
-  background-image: url("../images/bg-promo.jpg");
-}
-
-
-/*
-* Ticket
-*/
-
-#ticket {
-  background-image: url("../images/bg-ticket.jpg");
-}
-
-
-/*
-* Register
-*/
-
-
-#whitelist {
-  background-image: url("../images/bg-whitelist.jpg");
-}
 .btn-right {}
 @media (min-width: 1200px){
     .btn-abs {width:99%!important;}

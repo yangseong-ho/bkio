@@ -415,7 +415,7 @@ h4 {
 
 .h5,
 h5 {
-	font-size: 1.25rem
+	font-size: 1.2rem
 }
 
 .h6,
@@ -2102,28 +2102,34 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder {
-	color: #6c757d;
-	opacity: 1
+	color: darkgray;
+	opacity: 1;
+	font-family: sans-serif;
+
 }
 
 .form-control::-moz-placeholder {
-	color: #6c757d;
-	opacity: 1
+	color: darkgray;
+	opacity: 1;
+	font-family: sans-serif;
 }
 
 .form-control:-ms-input-placeholder {
-	color: #6c757d;
-	opacity: 1
+	color: darkgray;
+	opacity: 1;
+	font-family: sans-serif;
 }
 
 .form-control::-ms-input-placeholder {
-	color: #6c757d;
-	opacity: 1
+	color: darkgray;
+	opacity: 1;
+	font-family: sans-serif;
 }
 
 .form-control::placeholder {
-	color: #6c757d;
-	opacity: 1
+	color: darkgray;
+	opacity: 1;
+	font-family: sans-serif;
 }
 
 .form-control:disabled,
@@ -4245,7 +4251,8 @@ input[type=submit].btn-block {
 }
 
 .nav-tabs .nav-item {
-	margin-bottom: -1px
+	margin-bottom: -1px;
+	text-transform: uppercase;
 }
 
 .nav-tabs .nav-link {
@@ -4269,7 +4276,7 @@ input[type=submit].btn-block {
 .nav-tabs .nav-link.active {
 	color: #495057;
 	background-color: #fff;
-	border-color: #dee2e6 #dee2e6 #fff
+	border-color: #dee2e6 #dee2e6 #fff;
 }
 
 .nav-tabs .dropdown-menu {
@@ -6425,19 +6432,11 @@ button.close {
 	background-size: 100% 100%
 }
 
-.carousel-control-prev-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
-}
-
-.carousel-control-next-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")
-}
-
+/* indicators  button */
 .carousel-indicators {
 	position: absolute;
-	right: 0;
-	bottom: 10px;
-	left: 0;
+	right: 2%;
+	top: 45%;
 	z-index: 15;
 	display: -ms-flexbox;
 	display: flex;
@@ -6488,9 +6487,9 @@ button.close {
 
 .carousel-caption {
 	position: absolute;
-	right: 15%;
-	bottom: 20px;
-	left: 15%;
+	right: -10%;
+	top: 25%;
+/*	left: 15%;*/
 	z-index: 10;
 	padding-top: 20px;
 	padding-bottom: 20px;
