@@ -577,13 +577,13 @@ pre code {
 	max-height: 340px;
 	overflow-y: scroll
 }
-
+/* logo issue */
 .container {
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
-	margin-left: auto
+	margin-left: auto;
 }
 
 @media (min-width:576px) {
@@ -606,7 +606,7 @@ pre code {
 
 @media (min-width:1200px) {
 	.container {
-		max-width: 1140px
+		max-width: 1200px;
 	}
 }
 
@@ -4356,13 +4356,13 @@ input[type=submit].btn-block {
 .navbar-brand:hover {
 	text-decoration: none
 }
-
+/* nav issue 2*/
 .navbar-nav {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	padding-left: 0;
+/*	padding-left: 0;*/
 	margin-bottom: 0;
 	list-style: none
 }
@@ -6486,15 +6486,16 @@ button.close {
 }
 
 .carousel-caption {
+	width: 20%;
 	position: absolute;
-	right: -10%;
-	top: 25%;
+	right: 5%;
+	top: 22%;
 /*	left: 15%;*/
 	z-index: 10;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: #fff;
-	text-align: center
+/*	text-align: center;*/
 }
 
 .align-baseline {

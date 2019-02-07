@@ -1320,7 +1320,7 @@ li.checkmark-yellow:before {
 
 input[type="email"].form-control, input[type="text"].form-control, textarea.form-control, select.form-control {
   columns: 40;
-  border-color: lightskyblue! important;
+  border-color: rgb(0, 64, 175, 0.75)! important;
   border-radius: 2px;
   color: #495057;
   font-family: 'Poppins', 'NanumSquare', sans-serif !important;
@@ -1596,12 +1596,10 @@ label.error {
 */
 
 header, header .navbar-header, header .navbar-brand img {
-/*
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-*/
 }
 
 header .navbar-nav .nav-link {
@@ -2831,7 +2829,7 @@ section, .section {
     padding: 0 !important;
       
   }
-/*  underline problem
+/*  underline problem*/
   header .navbar-nav .nav-link:before {
     bottom: 0;
     content: '';
@@ -2839,10 +2837,12 @@ section, .section {
     height: 1px;
     left: 0;
     margin-bottom: -3px;
+/*
     position: absolute;
-    width: 18%;
-  }
+    width: 10%;
 */
+  }
+
 /*here*/
   header .navbar-nav .nav-link.active:before {
     background-color: white !important;
