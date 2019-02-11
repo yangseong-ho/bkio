@@ -390,12 +390,17 @@ h6 {
 	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.2;
-	color: inherit
+	color: inherit;
 }
 
+/* applied for titles: Blue Baikal Project, How It Works, Team, Contact */
 .h1,
 h1 {
-	font-size: 2.5rem
+	/*font-size: 2.5rem; */
+    font-size: 2.55rem !important;
+    line-height: 3.375rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 6rem !important;
 }
 
 .h2,
@@ -403,29 +408,39 @@ h2 {
 	font-size: 2rem
 }
 
+/* applied for content title: Entertainment Platform ... Blockchain */
 .h3,
 h3 {
-	font-size: 1.75rem
+	font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color:#3a2197;
 }
 
+/* applied for Consumers, Influencers, Creators */
 .h4,
 h4 {
-	font-size: 1.5rem
+	font-size: 1.65rem;
+    font-weight: 600;
 }
 
+/* applied for TEAM & ADVISORS' names */
 .h5,
-h5 {
-	font-size: 1.2rem
-}
+h5 { 
+	font-size: 1.3rem;
+    font-weight: 600;
+} 
 
+/* applied for project category: Movie, TV, Game, Music, Book */
 .h6,
 h6 {
-	font-size: 1rem
+	font-size: 1rem;
+    color:#3a2197;
 }
 
 .lead {
 	font-size: 1.25rem;
-	font-weight: 300
+	font-weight: 300;
 }
 
 .display-1 {
@@ -624,7 +639,7 @@ pre code {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-right: -15px;
-	margin-left: -15px
+	margin-left: -15px;
 }
 
 .no-gutters {
@@ -4234,7 +4249,7 @@ input[type=submit].btn-block {
 
 .nav-link {
 	display: block;
-	padding: .5rem 1rem
+	padding: 0rem 1rem;
 }
 
 .nav-link:focus,
@@ -6490,7 +6505,7 @@ button.close {
 	width: 20%;
 	position: absolute;
 	right: 5%;
-	top: 30%;
+	top: 23%;
 /*	left: 15%;*/
 	z-index: 10;
 /*	padding-top: 20px;*/
@@ -8215,6 +8230,16 @@ button.bg-dark:hover {
 	margin-left: 3rem !important
 }
 
+.mr-6,
+.mx-6 {
+	margin-right: 5rem !important
+}
+
+.mb-6,
+.my-6 {
+	margin-bottom: 5rem !important
+}
+
 .p-0 {
 	padding: 0 !important
 }
@@ -9148,7 +9173,8 @@ button.bg-dark:hover {
 
 	.mb-lg-5,
 	.my-lg-5 {
-		margin-bottom: 3rem !important
+		/*margin-bottom: 3rem !important*/
+        margin-bottom: 4rem !important
 	}
 
 	.ml-lg-5,
