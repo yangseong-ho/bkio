@@ -2069,7 +2069,7 @@ label, .label {
 */
 
 section, .section {
-  padding: 9rem 0rem;
+  padding: 100px 0px;
 }
 
 
@@ -2273,13 +2273,13 @@ section, .section {
 }
 
 .text-large {
-  font-size: 1.15rem !important;
-  line-height: 1.95rem !important;
+  font-size: 1.125rem !important;
+  line-height: 1.6875rem !important;
 }
 
 .text-extra-large {
-  font-size: 1.2rem !important;
-  line-height: 1.9rem !important;
+  font-size: 1.25rem !important;
+  line-height: 1.6875rem !important;
 }
 
 .title-small {

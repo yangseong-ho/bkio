@@ -34,27 +34,10 @@
 	<!-- Theme CSS -->
 	<link href="{% static 'bkio/css/theme.css' %}" rel="stylesheet" type="text/css">
 	<link href="{% static 'bkio/css/styles.css' %}" rel="stylesheet" type="text/css">
-    
-    <style>
-        /*-- 블록 설정 색상 start--*/
-        ::-moz-selection{
-                  background: #2850b7;
-                  color: #ffffff;
-        }
-        ::-webkit-selection{
-                  background: #2850b7;
-                  color: #ffffff;
-        }
-        ::selection{
-                  background: #2850b7;
-                  color: #ffffff;
-        }
-        /*--블록 설정 색상 end--*/
-    </style>
 
 </head>
 
-<body id="page-top" style="width:100%;">
+<body id="page-top" style="max-width: 100%; height: auto !important;">
 
 	<!--
 	<div class="pace  pace-inactive pace-inactive">
@@ -64,74 +47,58 @@
 		<div class="pace-activity"></div>
 	</div>
 -->
-	<div class="modal fade" id="LoginModal" role="dialog" style="padding:0% !important;">
-		<div class="modal-dialog" style="">
-			<img src="{% static 'bkio/img/modalview.png' %}" style="width:50%;"/>
+	<div class="modal fade" id="LoginModal" role="dialog">
+		<div class="modal-dialog" style="max-width: 700px; height: auto;">
+			<img src="{% static 'bkio/img/modalview.png' %}" style="height: auto; max-width: 100%;" />
 		</div>
 	</div>
-    
-	<header class="header-light fixed-top" style="width:100%; height:4rem; vertical-align:middle; -webkit-box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);
--moz-box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);
-box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
-		
-        <div class="row" style="display:flex; flex-direction:row; justify-content:center; align-content:stretch; vertical-align:middle;">
-            
-            <!-- Logo && Toggle -->
-            <div class="col-lg-4 navbar-header">
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="{% static 'bkio/img/logo.png' %}" alt="" class="logo-text-dark" style="object-fit:contain; width:12.8rem; height:auto;">
-                </a>
+	<header class="header-light fixed-top" style="max-width: 100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 navbar-header">
+					<a class="navbar-brand page-scroll" href="#page-top">
+						<img src="{% static 'bkio/img/logo.png' %}" alt="" class="logo-text-dark" style="object-fit: contain; width: 239px; height: auto;">
+					</a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                        <img src="{% static 'bkio/img/navbar-toggler-light.svg' %}">
-                    </span>
-                </button>
-            </div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon">
+							<img src="{% static 'bkio/img/navbar-toggler-light.svg' %}">
+						</span>
+					</button>
+				</div>
 
-            <!-- Navigation -->
-            <div class="col-lg-4 navbar-wrapper text-center" style="">
-                <div id="navigation" class="navbar navbar-expand-lg">
-                    <div class="collapse navbar-collapse" id="navbar-header">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#project">PROJECT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#whitepaper">WHITEPAPER</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#roadmap">ROADMAP</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#team">TEAM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link page-scroll" href="#contact">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-                
-            <!-- ENG | KOR -->
-            <div class="row col-lg-4 navbar-wrapper" style="float:right;">
-                <div style="display:flex; flex-direction:row; justify-content:right;">  
-                    <span class="text-small">
-                        <a class="nav-link page-scroll" href="//www.bluebaikal.io">ENG</a>
-                    </span>
-                    <span class="text-small" style="color:#ccc; font-weight:lighter;">|</span>
-                    <span class="text-small">
-                        <a data-toggle="modal" class="nav-link page-scroll" href="#LoginModal">
-                            KOR
-                        </a>
-                    </span>
-                </div>
-            </div>
-                      
-        </div>
-        
-        
+				<div class="col-lg-6 navbar-wrapper">
+					<div id="navigation" class="navbar navbar-expand-lg">
+						<div class="collapse navbar-collapse" id="navbar-header">
+							<ul class="navbar-nav">
+								<li class="nav-item" style="width: auto;">
+									<a class="nav-link page-scroll" href="#project">PROJECT</a>
+								</li>
+								<li class="nav-item" style="width: auto;">
+									<a class="nav-link page-scroll" href="#whitepaper">WHITEPAPER</a>
+								</li>
+								<li class="nav-item" style="width: auto;">
+									<a class="nav-link page-scroll" href="#roadmap">ROADMAP</a>
+								</li>
+								<li class="nav-item" style="width: auto;">
+									<a class="nav-link page-scroll" href="#team">TEAM</a>
+								</li>
+								<li class="nav-item" style="width: auto;">
+									<a class="nav-link page-scroll" href="#contact">CONTACT</a>
+								</li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+								<li class="nav-item" style="float: right;">
+									<a class="nav-link page-scroll" href="//www.bluebaikal.io">ENG</a>
+								</li>
+								<span style="color: #f2f0ee; font-size: 2rem; font-weight:lighter;">|</span>
+								<li class="nav-item" style="float: right;">
+									<a data-toggle="modal" class="nav-link page-scroll" href="#LoginModal">KOR</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header>
 	<!-- Header Start -->
 
@@ -146,7 +113,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 		<div class="carousel-inner">
 
 			<div class="carousel-item active">
-				<img src="{% static 'bkio/img/00 main_1.png' %}" style="max-width: 100%; max-height: 100%; min-height: 400px; position: relative;" alt="First slide">
+				<img src="{% static 'bkio/img/main_1.png' %}" style="max-width: 100%; max-height: 100%; min-height: 400px; position: relative;" alt="First slide">
 				<div class="carousel-caption">
 
 					<div>
@@ -162,30 +129,30 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 			</div>
 
 			<div class="carousel-item">
-				<img src="{% static 'bkio/img/00 main_2.png' %}" style="max-width: 100%; height: auto; position: relative; min-height: 400px;" alt="Second slide">
+				<img src="{% static 'bkio/img/main_2.png' %}" style="max-width: 100%; height: auto; position: relative; min-height: 400px;" alt="Second slide">
 				<div class="carousel-caption">
 
 					<div>
-						<h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color:black;">Digital Content Store</h4>
+						<h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: black;">Digital Content Store</h4>
 					</div>
 					<div>
-						<div class="" style="color:black;">
+						<h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: black;">
 							Access and enjoy contents you want by using BBK Tokens from Blue Baikal!
-						</div>
+						</h6>
 					</div>
 
 				</div>
 			</div>
 
 			<div class="carousel-item">
-				<img src="{% static 'bkio/img/00 main_3.png' %}" style="max-width: 100%; height: auto; position: relative; min-height: 400px;" alt="Third slide">
+				<img src="{% static 'bkio/img/main_3.png' %}" style="max-width: 100%; height: auto; position: relative; min-height: 400px;" alt="Third slide">
 				<div class="carousel-caption">
 
 					<div>
 						<h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: black;">Crowdfunding</h4>
 					</div>
 					<div>
-						<h6 style="font-size: 1vw; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: black;">
+						<h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: black;">
 							Invest to your favorite artists, creators, and projects in Blue Baikal to becom a producer!
 						</h6>
 					</div>
@@ -208,7 +175,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
 
 				<a data-toggle="modal" href="#LoginModal" style="width: auto; height: auto; text-decoration:none;">
-					<div class="text-center" style="border-radius:20px; width:100%; background-color: #3984ff; color: #fff; padding: 4%; font-size: 1vw;">
+					<div style="border-radius:20px; width:100%; background-color: #3984ff; color: #fff; text-align:center; padding: 4%; ">
 						Start Blue Baikal
 					</div>
 				</a>
@@ -234,57 +201,59 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 	<img src="img/00%20main_btn_signup.png"/></a>
 -->
 
-	<!--  start: BLUE BAIKAL PROJECT  -->
-	<section id="project" style="background-color: rgb(247,247,247,1); max-width:100%;">
+	<!--      -->
+	<section id="project" style="background-color: rgb(247,247,247,1); width:100%;">
 
-		<div class="justify-content-center">
-			<div class="text-center">
-                <h1 class="letter-spacing-1 text-uppercase"> BLUE BAIKAL PROJECT </h1>
+		<div class="row justify-content-center mb-5">
+			<div class="col-lg-6 text-center">
+				<h3 class=" font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2" >BLUE BAIKAL PROJECT</h3>
 			</div>
 		</div>
 
-		<container class="text-center" style="display:flex; flex-direction:row; justify-content:center;">
-			<div class="ml-4 mr-4" style="width:100px;">
-				<h6 class="mb-4"> Movie </h6>
+		<container style="display:flex; justify-content:center;">
+			<div style="text-align:center; width:180px; padding: 1%;">
+				<h6 > Movie </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_1.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4" style="width:100px;">
-				<h6 class="mb-4"> TV </h6>
+			<div style="text-align:center; width:180px; padding:1%;">
+				<h6 > TV </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_2.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4" style="width:100px;">
-				<h6 class="mb-4"> Game </h6>
+			<div style="text-align:center; width:180px; padding:1%;">
+				<h6 > Game </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_3.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4" style="width:100px;">
-				<h6 class="mb-4"> Music </h6>
+			<div style="text-align:center; width:180px; padding:1%;">
+				<h6 > Music </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_4.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4" style="width:100px;">
-				<h6 class="mb-4"> Book </h6>
+			<div style="text-align: center; width:180px; padding:1%;">
+				<h6 > Book </h6>
 				<img style="max-width:100%; height: auto !important; " src="{% static 'bkio/img/01 project_icon_5.png' %}">
 			</div>
 		</container>
-        
-        <br><br>
-        
-		<container style="width:100%; display:flex; justify-content:center; flex-direction:row; align-items:center;">
+		<br>
+		<container style="text-align:center; display:flex; justify-content:center; flex-direction:row; align-items: center;">
 			<!--		padding:100px; padding-left:200;-->
-			<div style="float:left; width:35%; margin:3%;">
-				<img src="{% static 'bkio/img/01 project_eco.png' %}" style="max-width:100%; height:auto;"/>
+			<div style=" float:left; max-width:600px;">
+				<img src="{% static 'bkio/img/01 project_eco.png' %}" style="max-width:100%; height: auto !important; padding: 10%" />
 			</div>
 			<!--			padding:200px; padding-left:0;-->
 
-			<div style="float:left; width:30.25%; margin:3%;">
-					<h3 class="mb-4">Entertainment Content Platform based on Blockchain</h3>
-					
-                    <div class="text-large" style="text-align:justify; line-height:1.95rem;">
-						Blue Baikal is a blockchain basis platform that connects content producers, influencers, and cosumers. We pursue and ideal system where entertainment business can grow, maximize their profits, and fair profit sharing with the participants.
-					</div>
+			<div style=" float:left; max-width: 600px;">
+				<!--				                <img src="{% static 'bkio/img/project_text.png' %}" style="max-width:100%; max-height:100%;" />-->
+				<div style="max-width: 100%">
+					<h2 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color:darkslateblue;">Entertainment Content Platform based on Blockchain</h2>
+				</div>
+				<div style="max-width: 100%">
+					<h4 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: black;">
+						Blue Baikal is a blockchain basis platform that connects content producers, influencers, and cosumers. We pursue and ideal system where entertainment business can grow, maximize their profits, and fair profit sharing with the par-ticipants.
+					</h4>
+				</div>
 
 			</div>
 
@@ -296,114 +265,76 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 		</div>
 -->
 	</section>
-    <!--   // end: BLUE BAIKAL PROJECT  -->
-    
-    
-    <!-- start: HOW IT WORKS -->
-	<section class="col-lg-12 col-sm-1" style="width:100%; background:url({% static 'bkio/img/02 how it works_bg.png' %}) no-repeat; background-size:contain;">
-		<div>
-			<div class="row justify-content-center">
-				<div class="text-center">
-					<h1 class="letter-spacing-1 text-uppercase" style="color:#fff;"> How IT WORKS </h1>
+	<section class="col-lg-12 col-sm-1" style="max-width: 100%; height: auto ! important;">
+		<div style="text-align: center;">
+			<div class="row justify-content-center mb-5">
+				<div class="col-lg-6 text-center mb-3 mb-lg-5">
+					<h3 class="font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2" >How IT WORKS </h3>
 				</div>
 			</div>
-			<container class="text-center" style="display: flex; flex-direction:row; justify-content:center;">
-				<div class="ml-4 mr-4" style="width:26.5%;">
-					<h4 class="mb-2 mb-lg-4 text-white">Consumers</h4>
+			<container style="display: flex; flex-direction:row; justify-content:center;">
+				<div style="width:30%; margin:1%">
+					<h3 class="text-center mb-2 mb-lg-4" style="font-size: 1.35rem">Consumers</h3>
 					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/Ey68aMOV9gc" style="width: 100%;height: 300px" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
+					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto !important; padding: 5%" />
 
-                     <p class="mt-2 pb-0 mb-0" style="padding:1.15rem;">
-                        <span class="text-large">
-                            Access wide range of contents and receive BBK Tokens to purchase and invest in other contents.
-                        </span>
-                    </p>
+					<p class="mt-4" style="padding:1%;">
+						<span class="text-center" style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">Access wide range of contents and receive BBK Tokens to purchase and invest in other contents.
+						</span>
+					</p>
 				</div>
 
-				<div class="ml-4 mr-4" style="width:26.5%;">
-					<h4 class="mb-2 mb-lg-4 text-white">Influencers</h4>
+				<div style="width:30%; margin:1%">
+					<h3 class="text-center mb-2 mb-lg-4" style="font-size: 1.35rem">Influencers</h3>
 					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/3LLjrHb5_bo" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
-                    
-                     <p class="mt-2 pb-0 mb-0" style="padding:1.2em; line-height: 1.9rem">
-                        <span class="text-large">
-                            Become a trend in <br> 
-                            Entertainment field. Blue Baikal is always here for you.
-                        </span>
-                    </p>
+					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto !important; padding: 5%" />
+
+					<p class="mt-4" style="padding:1%;">
+						<span class="text-center" style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">Become a trend in Entertainment field. Blue Baikal is always here for you.</span>
+					</p>
 				</div>
 
-				<div class="ml-4 mr-4" style="width:26.5%;">
-					<h4 class="mb-3 mb-lg-4 text-white">Creators</h4>
+				<div style="width:30%; margin:1%">
+					<h3 class="text-center mb-2 mb-lg-4" style="font-size: 1.35rem">Creators</h3>
 					<!--				<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
-					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
+					<img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto !important; padding: 5%" />
 
-                    <p class="mt-2 pb-0 mb-0" style="padding:1.2rem;">
-                        <span class="text-large">
-                            Baikalians are here for you <br>
-                            from getting investments <br>
-                            to content sales.
-                        </span>
-                    </p>
-                    
+					<p class=" mt-4" style="padding:1%;">
+						<span class="text-center" style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">
+							Baikalians are here for you from getting investments to content sales
+						</span>
+					</p>
+
 				</div>
 			</container>
 		</div>
 	</section>
-    <!--   // end: HOW IT WORKS  -->
-    
-    
-    <!-- start: WHITE PAPER -->
 	<!--display: flex; justify-content: center; flex-direction: row; align-items: center;-->
-	<container id="whitepaper" style="width:100%; height:8rem; background-image: url({% static 'bkio/img/03 whitepaper_bg.png' %}); background-repeat:no-repeat; background-size:cover; display:flex; flex-direction:row; justify-content:center; align-content:space-between;">
-		
-        <div class="mr-6" style="display:flex; justify-content:center; flex-direction:row; align-items: center;">
-			<h5 class="m-0 mr-5" style="font-weight:400; color:#fff;"> WHITE PAPER </h5>
+	<container id="whitepaper" style="display: flex; justify-content: center; flex-direction: row; align-items: center; max-width: 100%; height:100px; background-image: url({% static 'bkio/img/03 whitepaper_bg.png' %}); background-size:cover;">
+		<div style="display: flex; justify-content: center; flex-direction: row; align-items: center; ">
+			<span style="color: white; font-size:1.25rem; padding: 3%">WHITE PAPER</span>
 
-			<div class="text-center mr-3" style="width:9.8rem; padding:.6rem; border:solid 2px white; border-radius:22px 5px 5px 5px;">
-				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank">
-                    <!--img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="max-width: 100%; height:auto; padding: 5%" /-->
-                    <h5 class="m-0" style="font-weight:400; color:#fff;">
-                        ENG
-                    </h5>
-                </a>
+			<div style="width: 30%; height: 100%;">
+				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="max-width: 100%; height:auto; padding: 5%" /></a>
 			</div>
 
-			<div class="text-center" style="width:9.8rem; padding:.6rem; border:solid 2px white; border-radius:22px 5px 5px 5px;">
-				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank">
-                    <!--img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="max-width: 100%; height:auto; padding: 5%" /-->
-                    <h5 class="m-0" style="font-weight:400; color:#fff;">
-                        KOR
-                    </h5>
-                </a>
+			<div style="width: 30%; height: 100%;">
+				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="max-width: 100%; height:auto; padding: 5%" /></a>
 			</div>
 		</div>
 
-		<!--span style="color:#ccc;">|</span-->
+		<span style="color: #ccc; font-size:1rem; font-weight:100">|</span>
 
-		<div style="display:flex; justify-content:center; flex-direction:row; align-items: center;">
-			<h5 class="m-0 mr-5" style="font-weight:400; color:#fff;"> ONE PAGER </h5>
-			
-            <div class="text-center mr-3" style="width:9.8rem; padding:.6rem; border:solid 2px white; border-radius:22px 5px 5px 5px;">
-				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank">
-                    <!--img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="max-width: 100%; height:auto; padding: 5%" /-->
-                    <h5 class="m-0" style="font-weight:400; color:#fff;">
-                        ENG
-                    </h5>
-                </a>
+		<div style="display: flex; justify-content: center; flex-direction: row; align-items: center;">
+			<span style="color: white; font-size:1.25rem; padding: 3%">ONE PAGER</span>
+			<div style="width: 30%; height: 100%;">
+				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_eng.png' %}" style="max-width: 100%; height:auto; padding: 5%" /></a>
 			</div>
-			
-           <div class="text-center" style="width:9.8rem; padding:.6rem; border:solid 2px white; border-radius:22px 5px 5px 5px;">
-				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank">
-                    <!--img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="max-width: 100%; height:auto; padding: 5%" /-->
-                    <h5 class="m-0" style="font-weight:400; color:#fff;">
-                        KOR
-                    </h5>
-                </a>
+			<div style="width: 30%; height: 100%;">
+				<a href="{% static 'bkio/pdf/WhitePaper_BlueBaikal_v04.pdf' %}" target="_blank"><img src="{% static 'bkio/img/whitepaper_color_kr.png' %}" style="max-width: 100%; height:auto; padding: 5%" /></a>
 			</div>
 		</div>
 	</container>
-    <!--   // end: WHITEPAPER  -->
 
 	<!-- white paper
  <section id="whitepaper" class="bg-img-cover bg-overlay-black-5">
@@ -440,13 +371,13 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
 -->
 
-	<!-- start: ROADMAP -->
-	<section id="roadmap">
-		<div class="col-lg-12 text-center">
-			<h1 class="letter-spacing-1 text-uppercase"> ROADMAP </h1>
+	<!-- Ticket Start -->
+	<section id="roadmap" class="mb-5" style="text-align: center;">
+		<div class="col-lg-12 text-center mb-3 mb-lg-5">
+			<h3 class="font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2"> ROADMAP </h3>
 		</div>
-		<div class="text-center" style="width:52%; height:auto; margin:auto;">
-			<img src="{% static 'bkio/img/roadmap.png' %}" style="max-width:100%; height:auto !important;">
+		<div style="display: flex; justify-content: center; flex-direction: row; align-items: center; max-width: 900px; padding: 5%; text-align: center; height: auto; margin: auto;">
+			<img src="{% static 'bkio/img/roadmap.png' %}" style="max-width: 100%; height: auto !important; ">
 		</div>
 		<!--
 		<div class="container">
@@ -513,53 +444,48 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 -->
 
 	</section>
-    <!-- end: ROADMAP -->
 
 
-	<!-- start: TEAM -->
-	<section id="team" class="col-lg-12 col-sm-1 text-center" style="background-color: rgb(247,247,247,1);">
-		<container>
-			<div>
-				<div>
-					<h1 class="letter-spacing-1 text-uppercase"> Team </h1>
+	<!-- Section - Speakers Start -->
+	<section id="team" class="col-lg-12 col-sm-1" style="background-color: rgb(247,247,247,1); max-width: 100%; height: auto !important;">
+		<div class="container" style="margin-left: auto; max-width: 100%; height: auto;">
+			<div class="row justify-content-center mb-5">
+				<div class="col-lg-6 text-center mb-3 mb-lg-5">
+					<h3 class=" font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2" >Team</h3>
+
 				</div>
 				<!-- //.col-lg-6 -->
 			</div>
 			<!-- //.row -->
 
-            
-            <!--  대표님들  -->
-			<div class="row justify-content-center text-center mb-6">
-				<!-- 장훈 대표님 -->
-                <div class="ml-3 mr-3" style="width:15%;">
-					<figure class="pb-3 position-relative">
-						<img src="{% static 'bkio/img/05 team_1.png' %}" alt="" class="img-fluid" style="width:80%;">
+			<div class="row justify-content-center" style="max-width: 100%;">
+				<div  style="max-width: 450px; height: auto; padding-right:5%; padding-left:5%;">
+					<figure class="m-0 position-relative">
+						<img src="{% static 'bkio/img/05 team_1.png' %}" alt="" class="img-fluid" style="max-width: 100%;">
 					</figure>
 
-					<div>
-						<h5 class="pb-1">
+					<div class="py-4 text-center">
+						<h3 class="text-center mt-4 mb-3">
 							Clark Jang
-						</h5>
-						<span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
+						</h3>
+						<span class="d-block font-alt font-w-200 " style="font-size:1.5rem; color:#0040af;">
 							Blue Baikal
 							<br>
 							Project Owner
 						</span>
 					</div>
+
 				</div>
-                <!-- //장훈 대표님 -->
-                
-				<!-- 김만호 대표님 -->
-                <div class="ml-3 mr-3" style="width:15%;">
-					<figure class="pb-3 position-relative">
-						<img src="{% static 'bkio/img/05 team_2.png' %}" alt="" class="img-fluid" style="width:80%;">
+				<div  style="max-width: 450px; height: auto; padding-right:5%; padding-left:5%;">
+					<figure class="m-0 position-relative">
+						<img src="{% static 'bkio/img/05 team_2.png' %}" alt="" class="img-fluid" style="max-width: 100%;">
 					</figure>
 
-					<div>
-						<h5 class="pb-1">
+					<div class="py-4 text-center">
+						<h3 class="text-center mt-4 mb-3">
 							Eric Kim
-						</h5>
-						<span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
+						</h3>
+						<span class="d-block font-alt font-w-200 " style="font-size:1.5rem; color:#0040af;">
 							Strategic Business
 							<br>
 							Development
@@ -567,19 +493,18 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 					</div>
 					<!-- //.py-4 -->
 				</div>
-                <!-- //김만호 대표님 -->
+				<!-- //.col-md-6 -->
 
-				<!-- Sean 대표님 -->
-                <div class="ml-3 mr-3" style="width:15%;">
-					<figure class="pb-3 position-relative">
-						<img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid" style="width:80%;">
+				<div style="max-width: 450px; height: auto; padding-right:5%; padding-left:5%;">
+					<figure class="m-0 position-relative">
+						<img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid" style="max-width: 100%;">
 					</figure>
 
-					<div>
-						<h5 class="pb-1">
+					<div class="py-4 text-center">
+						<h3 class="text-center mt-4 mb-3" >
 							Sean Choi
-						</h5>
-						<span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
+						</h3>
+						<span class="d-block font-alt font-w-200 " style="font-size:1.5rem; color:#0040af;">
 							Global Service
 							<br>
 							Business
@@ -587,85 +512,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 					</div>
 					<!-- //.py-4 -->
 				</div>
-				<!-- //Sean 대표님 -->
-            </div>
-            <!--  //대표님들  -->
-                
-            <!-- STAFF -->    
-            <div class="row justify-content-center text-center">
-                <!-- staff 1 -->
-                <div class="ml-3 mr-3" style="width:15%;">
-                    <figure class="pb-3 position-relative">
-                        <img src="{% static 'bkio/img/05 team_4.png' %}" alt="" class="img-fluid" style="width:80%;">
-                    </figure>
-
-                    <div>
-						<h5 class="pb-1">
-                            Seongho Yang
-                        </h5>
-                        <span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-                            Blockchain & Web Developer
-                        </span>
-                    </div>
-                    <!-- //.py-4 -->
-                </div>
-                <!-- //staff 1 -->
-
-                <!-- staff 2 -->
-                <div class="ml-3 mr-3" style="width:15%;">
-                    <figure class="pb-3 position-relative">
-                        <img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid" style="width:80%;">
-                    </figure>
-
-                   <div>
-						<h5 class="pb-1">
-                            Hyejin Lee
-                        </h5>
-                        <span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-                            Web Developer
-                        </span>
-                    </div>
-                    <!-- //.py-4 -->
-                </div>
-                <!-- //staff 2 -->
-
-                <!-- staff 3 -->
-                <div class="ml-3 mr-3" style="width:15%;">
-                    <figure class="pb-3 position-relative">
-                        <img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid" style="width:80%;">
-                    </figure>
-
-                    <div>
-						<h5 class="pb-1">
-                            Kyeongwoo Lim
-                        </h5>
-                        <span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-                            Visual Designer
-                        </span>
-                    </div>
-                    <!-- //.py-4 -->
-                </div>
-                <!-- //staff 3 -->
-
-                <!-- staff 4 -->
-                <div class="ml-3 mr-3" style="width:15%;">
-                    <figure class="pb-3 position-relative">
-                        <img src="{% static 'bkio/img/05 team_3.png' %}" alt="" class="img-fluid" style="width:80%;">
-                    </figure>
-
-                    <div>
-						<h5 class="pb-1">
-                            Mil Park
-                        </h5>
-                        <span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-                            UX/UI Designer
-                        </span>
-                    </div>
-                    <!-- //.py-4 -->
-                </div>
-                <!-- //staff 4 -->
-            </div>
-            <!-- //STAFF --> 
+				<!-- //.col-md-6 -->
 
 				<!-- //. advisors
     <div class="row justify-content-center mb-5">
@@ -708,146 +555,10 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     </div> 
     
 	-->
-		</container>
+			</div>
+		</div>
 		<!-- //.container -->
 	</section>
-    <!-- end: TEAM -->
-    
-    
-    
-    
-    <!-- start: ADVISORS -->
-	<section id="team" class="pt-0 mt-0 col-lg-12 col-sm-1 text-center" style="background-color: rgb(247,247,247,1);">
-		<container>
-			<div>
-				<div>
-					<h1 class="letter-spacing-1 text-uppercase"> ADVISORS </h1>
-				</div>
-				<!-- //.col-lg-6 -->
-			</div>
-			<!-- //.row -->
-
-            
-            <!--  Advisor row 1  -->
-			<div class="row justify-content-center text-center mb-6">
-				<!-- Advisor 1 -->
-                <div class="ml-5 mr-5" style="width:15%;">
-					<figure class="pb-3 position-relative">
-						<img src="{% static 'bkio/img/06 advisor_1.png' %}" alt="" class="img-fluid" style="width:80%;">
-					</figure>
-
-					<div>
-						<h5 class="pb-1">
-							Valery Markarov
-						</h5>
-						<span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-							Content Business
-						</span>
-					</div>
-				</div>
-                <!-- //Advisor 1 -->
-                
-				<!-- Advisor 2 -->
-                <div class="ml-5 mr-5" style="width:15%;">
-					<figure class="pb-3 position-relative">
-						<img src="{% static 'bkio/img/06 advisor_2.png' %}" alt="" class="img-fluid" style="width:80%;">
-					</figure>
-
-					<div>
-						<h5 class="pb-1">
-							Sutthipong Kuruhongsa
-						</h5>
-						<span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-							Technology 
-							<br>
-							(AI & Data field)
-						</span>
-					</div>
-					<!-- //.py-4 -->
-				</div>
-                <!-- //Advisor 2 -->
-
-				<!-- Advisor 3 -->
-                <div class="ml-5 mr-5" style="width:15%;">
-					<figure class="pb-3 position-relative">
-						<img src="{% static 'bkio/img/06 advisor_3.png' %}" alt="" class="img-fluid" style="width:80%;">
-					</figure>
-
-					<div>
-						<h5 class="pb-1">
-							Coven Jung
-						</h5>
-						<span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-							System Architect & IT
-						</span>
-					</div>
-					<!-- //.py-4 -->
-				</div>
-				<!-- //Advisor 3 -->
-            </div>
-            <!--  //ADVISOR row 1  -->
-                
-            <!-- ADVISOR row 2 -->    
-            <div class="row justify-content-center text-center">
-                <!-- Advisor 4 -->
-                <div class="ml-5 mr-5" style="width:15%;">
-                    <figure class="pb-3 position-relative">
-                        <img src="{% static 'bkio/img/06 advisor_4.png' %}" alt="" class="img-fluid" style="width:80%;">
-                    </figure>
-
-                    <div>
-						<h5 class="pb-1">
-                            Sungjin Kim
-                        </h5>
-                        <span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-                            Marketing & Game Operating
-                        </span>
-                    </div>
-                    <!-- //.py-4 -->
-                </div>
-                <!-- //Advisor 4 -->
-
-                <!-- Advisor 5 -->
-                <div class="ml-5 mr-5" style="width:15%;">
-                    <figure class="pb-3 position-relative">
-                        <img src="{% static 'bkio/img/06 advisor_5.png' %}" alt="" class="img-fluid" style="width:80%;">
-                    </figure>
-
-                   <div>
-						<h5 class="pb-1">
-                            Joong Heon Kim
-                        </h5>
-                        <span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-                            Deep Learning & 
-                            <br>
-                            Privacy Preserving
-                        </span>
-                    </div>
-                    <!-- //.py-4 -->
-                </div>
-                <!-- //Advisor 5 -->
-
-                <!-- Advisor 6 -->
-                <div class="ml-5 mr-5" style="width:15%;">
-                    <figure class="pb-3 position-relative">
-                        <img src="{% static 'bkio/img/06 advisor_6.png' %}" alt="" class="img-fluid" style="width:80%;">
-                    </figure>
-
-                    <div>
-						<h5 class="pb-1">
-                            Jason Lim
-                        </h5>
-                        <span class="d-block text-medium" style="color:#3a2197; line-height:1.55rem !important;">
-                            Marketing
-                        </span>
-                    </div>
-                    <!-- //.py-4 -->
-                </div>
-                <!-- //Advisor 6 -->
-            </div>
-            <!-- //ADVISORS --> 
-        </container>
-    </section>
 
 
 
@@ -946,90 +657,76 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 </section>
 -->
 
-    <!-- start: CONTACT -->
 	<section id="contact">
-        <!-- consist of 2 divs: info && message form -->
-		<container style="display:flex; flex-flow:row; justify-content:center; align-content: space-between;">
+		<div class="container" style=" margin: auto; ">
 			<!--		display: flex; jus~ : center;-->
-            
-            <!-- 1. info -->
-			<div class="row justify-content-left" style="width:30%;">
-				<div class="">
-					<h1 class="mb-4 letter-spacing-1 text-uppercase"> Contact </h1>
+			<div style="padding: 10%; display: flex; justify-content: center;">
+				<div class="col-lg-7 mb-3 mb-lg-5">
+					<h3 class=" font-alt font-w-700 letter-spacing-1 m-0 text-uppercase title-extra-large-2" >Contact</h3>
 					<div class="row">
 						<div class="col-lg-12 col-xl-12">
-							<h5 class="mb-6" style="line-height:1.95rem !important; text-decoration-line:underline;">
-                                For more information,
-                                <br>
-                                please contact us !
-                            </h5>
-                            
-							<!--h6 class="text-large m-0" style="color:#2850b7;">E-MAIL</h6-->
-							<span class="mb-4 d-block text-large letter-spacing-1">
-								<a href="mailto:info@bluebaikal.com" class="text-gray-800">info@bluebaikal.com </a>
+							<br>
+							<h4 class="font-alt m-0 title-small" >For more information, please contact us</h4><br>
+							<h3 class="font-alt m-0 title-small" style="color: blue;">E-MAIL</h3>
+							<span class="d-block font-alt font-w-600 letter-spacing-1 mt-2 text-gray-800 text-medium">
+								<a href="mailto:info@bluebaikal.com" class="text-black">info@bluebaikal.com </a>
 							</span>
-                            
-							<div style="display:flex;">
+							<!--							style="display: flex; justify-content: center; flex-direction: row;"-->
+							<br>
+							<div style="display: flex;">
 								<div>
 									<!--
-									<a href="https://t.me" class="text-gray-600"><img src="{% static 'bkio/img/07 contact_sns_1.png' %}" style="width: 45px; height: 45px;">
+									<a href="https://t.me" class="text-gray-600"><img src="{% static 'bkio/img/tele.png' %}" style="width: 45px; height: 45px;">
 									</a>
 -->
 									<a data-toggle="modal" href="#LoginModal" class="text-gray-600">
-										<img src="{% static 'bkio/img/07 contact_sns_1_2.png' %}" style="width:3rem;">
+										<img src="{% static 'bkio/img/b_tele.png' %}" style="width: 45px; height: 45px; ">
 									</a>&emsp;
 								</div>
 
 								<div>
 									<!--
 									<a href="https://www.facebook.com/" class="text-gray-600">
-										<img src="{% static 'bkio/img/07 contact_sns_2.png' %}" style="width: 45px; height: 45px;">
+										<img src="{% static 'bkio/img/face.png' %}" style="width: 45px; height: 45px;">
 									</a>
 -->
 									<a data-toggle="modal" href="#LoginModal" class="text-gray-600">
-										<img src="{% static 'bkio/img/07 contact_sns_2_2.png' %}" style="width:3rem;">
+										<img src="{% static 'bkio/img/b_face.png' %}" style="width: 45px; height: 45px; ">
 									</a>&emsp;
 								</div>
-								
-                                <div>
+								<div>
 									<!--
 									<a href="https://twitter.com/" class="text-gray-600">
-										<img src="{% static 'bkio/img/07 contact_sns_3.png' %}" style="width: 45px; height: 45px;">
+										<img src="{% static 'bkio/img/twt.png' %}" style="width: 45px; height: 45px;">
 									</a>
 -->
 									<a data-toggle="modal" href="#LoginModal" class="text-gray-600">
-										<img src="{% static 'bkio/img/07 contact_sns_3_2.png' %}" style="width:3rem;">
+										<img src="{% static 'bkio/img/b_twt.png' %}" style="width: 45px; height: 45px; ">
 									</a>
 								</div>
 							</div>
-                            
 						</div>
 					</div>
 				</div>
 			</div>
-            <!-- //1. info -->
-            
-            
-            
-            <!-- 2. message form -->
-			<div style="width:43%; display:flex; justify-content:center; align-items: center;">
+			<div style="display: flex; justify-content: center; max-width: 1200px; align-items: center;">
 				<div style="height: auto; width: 90%;border:3px solid rgb(0,64,175); border-bottom-left-radius: 60px; border-bottom-right-radius: 60px; border-top-right-radius: 60px; display: flex; justify-content: center; flex-direction: row;">
 					<form action="https://formspree.io/ysh827@goboogiegames.com" method="post" id="myform" name="myform" style="width: 80%;">
 						<br><br><br>
 
 						<div class="form-group">
-							<input type="text" id="name" name="name" class="form-control required name" placeholder="name" style="border-top: 0; border-left: 0; border-right: 0; border-color: lightskyblue; width: 100%; height: 20px; font-size: 0.8vw;">
+							<input type="text" id="name" name="name" class="form-control required name" placeholder="name" style="border-top: 0; border-left: 0; border-right: 0; border-color: lightskyblue; width: 100%; height: 20px; ">
 						</div><br>
 						<div class="form-group">
-							<input type="email" id="email" name="email" class="form-control required email" placeholder="Email" style="width: auto; border-top: 0; border-left: 0; border-color: lightskyblue; border-right: 0; width: 100%; height: 20px; font-size: 0.8vw;">
+							<input type="email" id="email" name="email" class="form-control required email" placeholder="Email" style="width: auto; border-top: 0; border-left: 0; border-color: lightskyblue; border-right: 0; width: 100%; height: 20px;">
 						</div><br>
 						<div class="form-group">
-							<input type="text" id="subject" name="subject" class="form-control required subject" placeholder="subject" style="border-top: 0; border-left: 0; border-right: 0; border-color: lightskyblue; width: 100%; height: 20px; font-size: 0.8vw;">
+							<input type="text" id="subject" name="subject" class="form-control required subject" placeholder="subject" style="border-top: 0; border-left: 0; border-right: 0; border-color: lightskyblue; width: 100%; height: 20px;">
 						</div><br>
 						<div class="form-group">
 							<!--						<div style="font-family: sans-serif ; color: darkgray;"><strong>Message</strong></div>-->
 
-							<textarea type="textarea" cols="40" rows="8" id="message" name="message" class="form-control required message" style="height: 280px; width: 100%; border-color: lightskyblue; font-size: 0.8vw;" placeholder="Message"></textarea>
+							<textarea type="textarea" cols="40" rows="8" id="message" name="message" class="form-control required message" style="height: 280px; width: 100%; border-color: lightskyblue;" placeholder="Message"></textarea>
 						</div>
 						<!--
 
@@ -1037,7 +734,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 -->
 						<div style="text-align: center;">
 							<div class="submit-wrap">
-								<input type="submit" value="&nbsp;&nbsp;Send&nbsp;&nbsp;" style=" width: 30%; padding: 2%; background-color: #3984ff; color: white; font-size: 1.5vw; border: none; white-space: nowrap; border-radius: 100px; text-align: center;">
+								<input type="submit" value="&nbsp;&nbsp;Send&nbsp;&nbsp;" style=" width: 30%; padding: 2%; background-color: #3984ff; color: white; font-size: 30px; border: none; white-space: nowrap; border-radius: 100px; text-align: center;">
 								<!--					style="background-image: url({% static 'bkio/img/07 contact_btn_send.png' %})"-->
 							</div>
 						</div>
@@ -1045,18 +742,15 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 					</form>
 				</div>
 			</div>
-            <!-- //2. message form -->
-            
-		</container>
+		</div>
 		<!-- //.container -->
 	</section>
-    <!-- end: CONTACT -->
 
 	<!-- Footer Start -->
 	<footer class="py-5" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); background-size: cover; max-width: 100%; height: auto; justify-content: center;">
 		<div class="container" style="margin-left: auto;">
 
-			<div class="col-12 row" style="width:100%; align-items:center;">
+			<div class="col-12 row" style="width:100%; align-items: center;">
 				<div class="text-center">
 					<div class="col-12">
 						<img src="{% static 'bkio/img/07 footer_logo.png' %}" style="width:20%; height: auto;">
