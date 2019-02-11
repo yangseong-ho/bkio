@@ -50,6 +50,28 @@
                   color: #ffffff;
         }
         /*--블록 설정 색상 end--*/
+        
+        
+        /* RESPONSIVE WEB STYLE */
+        /* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
+        @media (max-width: 575px) {
+            #project .category { display:none; }
+        }
+
+        /* 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) */
+        @media (max-width: 767px) {
+             #project .category { display:none; }
+        }
+
+        /* 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용) */
+        @media (max-width: 991px) {
+
+        }
+
+        /* 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용) */
+        @media (max-width: 1199px) {
+
+        }
 
     </style>
 
@@ -115,7 +137,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                     </div>
                    
                     <!-- ENG | KOR -->
-                    <div class="collapse navbar-collapse" id="navbar-header">
+                    <div class="collapse navbar-collapse">
                         <span class="text-small">
                             <a class="nav-link page-scroll" href="//www.bluebaikal.io">ENG</a>
                         </span>
@@ -126,7 +148,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                             </a>
                         </span>
                     </div>
-               
+          
                 </div>           
             </div>
                       
@@ -244,43 +266,43 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 			</div>
 		</div> 
 
-		<container class="category text-center" style="display:flex; flex-direction:row; justify-content:center; align-content:space-between; flex-wrap:wrap;">
-			<div class="ml-4 mr-4">
+		<container class="category text-center" style="display:flex; flex-direction:row; justify-content:center;">
+			<div class="ml-4 mr-4" style="width:100px;">
 				<h6 class="mb-4"> Movie </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_1.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4">
+			<div class="ml-4 mr-4" style="width:100px;">
 				<h6 class="mb-4"> TV </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_2.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4">
+			<div class="ml-4 mr-4" style="width:100px;">
 				<h6 class="mb-4"> Game </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_3.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4">
+			<div class="ml-4 mr-4" style="width:100px;">
 				<h6 class="mb-4"> Music </h6>
 				<img style="max-width:100%; height: auto !important;" src="{% static 'bkio/img/01 project_icon_4.png' %}">
 			</div>
 
-			<div class="ml-4 mr-4">
+			<div class="ml-4 mr-4" style="width:100px;">
 				<h6 class="mb-4"> Book </h6>
 				<img style="max-width:100%; height: auto !important; " src="{% static 'bkio/img/01 project_icon_5.png' %}">
 			</div>
 		</container>
         
         <br><br>
-       
-		<container class="project_info" style="">
+        
+		<container style="width:100%; display:flex; justify-content:center; flex-direction:row; align-items:center;">
 			<!--		padding:100px; padding-left:200;-->
-			<div class="project_img" style="">
+			<div style="float:left; width:35%; margin:3%;">
 				<img src="{% static 'bkio/img/01 project_eco.png' %}" style="max-width:100%; height:auto;"/>
 			</div>
 			<!--			padding:200px; padding-left:0;-->
 
-			<div class="project_desc" style="">
+			<div style="float:left; width:30.25%; margin:3%;">
 					<h3 class="mb-4">Entertainment Content Platform based on Blockchain</h3>
 					
                     <div class="text-large" style="text-align:justify; line-height:1.95rem;">
@@ -718,7 +740,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     
     
     <!-- start: ADVISORS -->
-	<section id="team" class="pt-0 mt-0 col-lg-12 col-sm-1 text-center" style="background-color: rgb(247,247,247,1);">
+	<section class="pt-0 mt-0 col-lg-12 col-sm-1 text-center" style="background-color: rgb(247,247,247,1);">
 		<container>
 			<div>
 				<div>
@@ -1015,7 +1037,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
             <!-- 2. message form -->
 			<div style="width:43%; display:flex; justify-content:center; align-items: center;">
 				<div style="height: auto; width: 90%;border:3px solid rgb(0,64,175); border-bottom-left-radius: 60px; border-bottom-right-radius: 60px; border-top-right-radius: 60px; display: flex; justify-content: center; flex-direction: row;">
-					<form action="https://formspree.io/ysh827@goboogiegames.com" method="post" id="myform" name="myform" style="width: 80%;">
+					<form action="https://formspree.io/info@bluebaikal.com" method="post" id="myform" name="myform" style="width: 80%;">
 						<br><br><br>
 
 						<div class="form-group">

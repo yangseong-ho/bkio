@@ -11,14 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import socket
 
-if socket.gethostname()=="ysh827":
-    from local_settings import *
-
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -36,6 +29,7 @@ DEBUG = False
 ALLOWED_HOSTS = '*'
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -46,8 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 	'bkio',
-#	'djangosecure',
-#	'sslserver'
+
 ]
 
 MIDDLEWARE = [
@@ -58,13 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-#	'djangosecure.middleware.SecurityMiddleware',
 ]
-#SECURE_SSL_REDIRECT = True
-#SESSION_COOKIE_SECURE = True 
-#CSRF_COOKIE_SECURE = True
-#SECURE_HSTS_SECONDS = 31536000 
-#SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 ROOT_URLCONF = 'bluebaikal.urls'
 

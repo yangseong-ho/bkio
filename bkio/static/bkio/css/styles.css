@@ -149,63 +149,28 @@ button:focus, button:active { outline: none !important;  box-shadow: none;}
 
 
 
-/* RESPONSIVE WEB CSS SYTLE */
 
+
+/* RESPONSIVE WEB STYLE */
+
+/* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
+@media (max-width: 575px) {
+    #project .category { display:none !important; }
+}
 
 /* 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) */
 @media (max-width: 767px) {
-    .project_info {
-        width: 100% !important;
-        display: block !important;
-        text-align: center;
-    }
-    #project .category { 
-        
-    }
-    .project_img { 
-        width: 70% !important;
-        margin: 3% !important;
-    }
-    
-    .project_desc {
-        width: 70% !important;
-        margin: 5% !important;
-    }
+     #project .category { display:none !important; }
 }
 
-/* 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용)
+/* 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용) */
 @media (max-width: 991px) {
-}
-*/
-
-.category div {
-    width: 6.5rem;
+    
 }
 
 /* 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용) */
-@media (max-width: 1920px) {
-    .project_info {
-        width:100%;
-        display:flex;
-        justify-content:center;
-        flex-direction:row;
-        align-items:center;
-    }
-    .category div {
-        margin-bottom: 3rem;
-    }
-    .project_img {
-        float:left;
-        width:35%; 
-        margin:3%;
-    }
-    
-    .project_desc {
-        float: left;
-        width: 30.25%;
-        margin: 3%;
-    }
-  
+@media (max-width: 1199px) {
+   
 }
 
 
