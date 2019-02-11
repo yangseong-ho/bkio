@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 	'bkio',
-	'djangosecure',
-	'sslserver'
+#	'djangosecure',
+#	'sslserver'
 ]
 
 MIDDLEWARE = [
@@ -51,13 +51,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-	'djangosecure.middleware.SecurityMiddleware',
+#	'djangosecure.middleware.SecurityMiddleware',
 ]
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True 
-CSRF_COOKIE_SECURE = True
-SECURE_HSTS_SECONDS = 31536000 
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+#SECURE_SSL_REDIRECT = True
+#SESSION_COOKIE_SECURE = True 
+#CSRF_COOKIE_SECURE = True
+#SECURE_HSTS_SECONDS = 31536000 
+#SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 ROOT_URLCONF = 'bluebaikal.urls'
 
