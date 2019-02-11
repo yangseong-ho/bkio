@@ -23,14 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'm8$@5fj_%an3f%0-xyz&casai)bo*x7#lc0lqw1(z8+k5w5mp8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+
 ALLOWED_HOSTS = '*'
-
-#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https')
-#SECURE_SSL_REDIRECT = True
-#SESSION_COOKIE_SECURE = True
-#CSRF_COOKIE_SECURE = True
-
 
 
 
@@ -43,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'bkio'
+	'bkio',
+	'djangosecure',
+	'sslserver'
 ]
-#"sslserver",
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -54,7 +51,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	'djangosecure.middleware.SecurityMiddleware',
 ]
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True 
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_SECONDS = 31536000 
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 ROOT_URLCONF = 'bluebaikal.urls'
 
