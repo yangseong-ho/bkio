@@ -1636,9 +1636,16 @@ header .navbar-header {
     /*height: 80px;*/
     position: fixed;
     float: left;
-    left: 1rem;
+    left: .4rem;
 }
-    
+
+@media (min-width: 400px) and (max-width: 767px) {
+    header .navbar-header {
+        position: fixed;
+        float: left;
+        left: .2rem;
+    }
+}
 
 header .navbar-brand {
   display: block;
@@ -1656,9 +1663,9 @@ header .navbar-brand img {
 header .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.4);
   border-radius: 2px;
-  position: absolute;
-  right: 15px;
-  top: 20px;
+  position: fixed;
+  right: .8rem;
+  top: .8rem;
 }
 
 header .navbar-toggler-icon {

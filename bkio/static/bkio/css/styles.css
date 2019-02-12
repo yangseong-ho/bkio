@@ -148,8 +148,49 @@ button:focus, button:active { outline: none !important;  box-shadow: none;}
 
 
 
+/* MAIN VISUAL */
+
+/* PROJECT */
+
+/* HOW IT WORKS */
+
+/* WHITEPAPER */
+#whitepaper .btn-whitepaper {
+    width: 9.8rem; 
+    padding: .6rem; 
+    border: solid 2px rgba(255,255,255,1); 
+    border-radius: 22px 5px 5px 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+}
+#whitepaper .btn-whitepaper_n {
+    width: 9.8rem; 
+    padding: .6rem; 
+    border: solid 2px rgba(255,255,255,0.3); 
+    border-radius: 22px 5px 5px 5px;
+    color: rgba(255,255,255,0.3);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#whitepaper a {
+    text-decoration: none !important;
+}
+
+#whitepaper .btn-whitepaper:hover {
+    background-color: #fff;
+    color: #2850b7 !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 
 
+
+/* ROADAMP */
+
+
+/* TEAM */
 #team .team-block {
     width: 20%;
 }
@@ -159,6 +200,8 @@ button:focus, button:active { outline: none !important;  box-shadow: none;}
 }
 
 
+/* CONTACT */
+
 
 
 
@@ -166,7 +209,7 @@ button:focus, button:active { outline: none !important;  box-shadow: none;}
 
 
 /* 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) */
-@media (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 767px) {
     
     /* Main Visual */
     .mobile {
