@@ -149,6 +149,25 @@ button:focus, button:active { outline: none !important;  box-shadow: none;}
 
 
 /* MAIN VISUAL */
+a {
+    text-decoration: none !important;
+}
+
+.btn-join div {
+    border-radius: 20px;
+    width: 100%;
+    background-color: #3984ff;
+    padding: 4%;
+    color: #fff;
+}
+
+.btn-join div:hover {
+    border-radius: 20px;
+    width: 100%;
+    background-color: #2b76f1;
+    padding: 4%;
+    color: #fff;
+}
 
 /* PROJECT */
 
@@ -212,12 +231,11 @@ button:focus, button:active { outline: none !important;  box-shadow: none;}
 @media (min-width: 400px) and (max-width: 767px) {
     
     /* Main Visual */
-    .mobile {
+    #visual-mobile {
         visibility: visible !important;
     }
-    .pc {
+    #visual-pc {
         display: none !important;
-        visibility:hidden !important;
     }
     
     /* content 1 : 프로젝트 소개 */
@@ -250,14 +268,13 @@ button:focus, button:active { outline: none !important;  box-shadow: none;}
 */
 
 /* 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용) */
-@media (max-width: 1920px) {
+@media (min-width: 768px) and (max-width: 1920px) {
     
     /* Main Visual */
-    #carouselExampleIndicators .mobile {
+    #visual-mobile {
         display: none !important;
-        visibility: none !important;
     }
-    #carouselExampleIndicators .pc {
+    #visual-pc {
         visibility: visible !important;
     }
     

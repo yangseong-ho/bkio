@@ -1606,10 +1606,11 @@ header, header .navbar-header, header .navbar-brand img {
 }
 header .navbar-brand img {
     /*object-fit: contain;*/
-    width: 12rem;
+    width: 11.5rem;
     height: auto;
     position: relative;
-    top: .8rem;
+    top: 1.05rem;
+    left: 3rem;
 }
 
 header .navbar-nav .nav-link {
@@ -1654,9 +1655,9 @@ header .navbar-brand {
 }
 
 header .navbar-brand img {
-  position: relative;
+  /*position: relative;
   left: 3rem;
-  /*height: 46px;
+  height: 46px;
   top: 17px;*/
 }
 
@@ -1685,8 +1686,7 @@ header.header-dark {
 }
 
 header.header-dark .navbar-wrapper {
-  background-color: rgba(
-      0, 0, 0, 0.98);
+  background-color: rgba(0, 0, 0, 0.98);
 }
 
 header.header-light {
@@ -2289,7 +2289,7 @@ section, .section {
 
 .text-medium {
   font-size: 1rem !important;
-  line-height: 1.5rem !important;
+  line-height: 1.75 !important;
 }
 
 .text-large {
@@ -2845,8 +2845,8 @@ section, .section {
 
   header .navbar-nav .nav-item {
     /*padding: 1rem !important;*/
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     font-size: 0.9rem;
   }
     
@@ -2878,7 +2878,7 @@ section, .section {
     
 /*here hover*/
   header .navbar-nav .nav-link:hover {
-    color: darkblue! important;
+    color: #3984ff! important;
   }
 
   header.shrink {
@@ -2891,9 +2891,9 @@ section, .section {
   }
 
   header.shrink .navbar-brand img {
-    /*height: 40px;
-    top: 10px;*/
-      width: 10rem;
+      position: relative;
+      top: 0.95rem;
+      width: 10.5rem;
       height: auto;
   }
 
@@ -2927,7 +2927,7 @@ header.shrink .navbar-wrapper span {
   }
 
   header.shrink.header-light .navbar-nav .nav-link:hover {
-    color: black !important;
+    color: #3984ff !important;
   }
   
 
