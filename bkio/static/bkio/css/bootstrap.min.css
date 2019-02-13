@@ -175,8 +175,9 @@ sup {
 	top: -.5em
 }
 
+
 a {
-	/*color: #007bff;*/
+	color: #fff;
 	text-decoration: none;
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects
@@ -397,10 +398,10 @@ h6 {
 .h1,
 h1 {
 	/*font-size: 2.5rem; */
-    font-size: 2.55rem !important;
-    line-height: 3.375rem !important;
-    font-weight: 700 !important;
-    margin-bottom: 6rem !important;
+    font-size: 2.3rem;
+    line-height: 3.375rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
 }
 
 .h2,
