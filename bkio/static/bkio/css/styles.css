@@ -231,10 +231,10 @@ a {
 @media (min-width: 400px) and (max-width: 767px) {
     
     /* Main Visual */
-    #visual-mobile {
+    .visual-mobile {
         visibility: visible !important;
     }
-    #visual-pc {
+    .visual-pc {
         display: none !important;
     }
     
@@ -267,14 +267,14 @@ a {
 }
 */
 
-/* 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용) */
-@media (min-width: 768px) and (max-width: 1920px) {
+/* 테스크탑 */
+@media (min-width: 768px) {
     
     /* Main Visual */
-    #visual-mobile {
+    .visual-mobile {
         display: none !important;
     }
-    #visual-pc {
+    .visual-pc {
         visibility: visible !important;
     }
     
