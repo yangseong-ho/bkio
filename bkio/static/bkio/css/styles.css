@@ -185,7 +185,7 @@ a {
 
 /* WHITEPAPER */
 #whitepaper a {
-    width: 9.8rem; 
+   /* width: 10rem; */
     padding: .6rem; 
     border: solid 2px rgba(255,255,255,1); 
     border-radius: 22px 5px 5px 5px;
@@ -203,7 +203,7 @@ a {
 }
 
 #whitepaper .btn-disabled {
-    width: 9.8rem; 
+    /*width: 10rem; */
     padding: .6rem; 
     border: solid 2px rgba(255,255,255,0.3); 
     border-radius: 22px 5px 5px 5px;
@@ -257,10 +257,10 @@ a {
     }
     
     /* Main Visual */
-    .mobile {
+    #mobile, #roadmap-m {
         visibility: visible !important;
     }
-    .visual-pc {
+    #pc, #roadmap-pc {
         display: none !important;
     }
     
@@ -318,6 +318,7 @@ a {
     #whitepaper container {
         width: 100%;
         height: auto;
+        padding: 3rem 0;
         background-image: url("../img/03 whitepaper_bg_m.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -327,7 +328,7 @@ a {
         align-items: center;
     }
     #whitepaper container div {
-        width: 30%; 
+        width: 35%; 
         display: flex; 
         justify-content: center; 
         flex-direction: column; 
@@ -340,7 +341,9 @@ a {
         margin-bottom: 1.2rem !important;
         text-align: center;
     }
-    
+    #whitepaper a, #whitepaper .btn-disabled {
+        width: 9rem; 
+    }
     
     
     
@@ -351,7 +354,7 @@ a {
     }
 
     #team .img-fluid {
-        width: 75%;
+        width: 60%;
     }
     
     
@@ -373,12 +376,12 @@ a {
         text-align: center;
         width: 80% !important;
         margin: 0 auto;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         flex: row;
         justify-content: center;
     }
     .message-form {
-        width: 75% !important;
+        width: 70% !important;
         clear: both;
         display: block;
         margin: 0 auto;
@@ -399,10 +402,10 @@ a {
 @media all and (min-width:769px) {
     
     /* Main Visual */
-    .mobile {
+    #mobile, #roadmap-m {
         display: none !important;
     }
-    .pc {
+    #pc, #roadmap-pc {
         visibility: visible !important;
     }
     
@@ -459,7 +462,9 @@ a {
         justify-content: center;
         align-content: space-between;
     }
-    
+    #whitepaper a, #whitepaper .btn-disabled {
+        width: 13rem; 
+    }
     #whitepaper container div {
         width: 35%; 
         display: flex; 

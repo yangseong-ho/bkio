@@ -156,7 +156,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
         </ol>
         
         <!-- Main Visual (PC) Start -->
-        <div class="pc carousel-inner">
+        <div id="pc" class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{% static 'bkio/img/00 main_1.png' %}" style="max-width:100%; max-height:100%; min-height: 400px; position: relative;" alt="First slide">
 
@@ -225,7 +225,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
         <!-- // Main Visual (PC) -->
 
         <!-- Main Visual (Mobile) Start -->
-        <div class="mobile carousel-inner">
+        <div id="mobile" class="carousel-inner">
             <div class="carousel-item active text-center" style="width:100%;">
                 <!--div class="carousel-caption" style="width:70%;">
                     <div>
@@ -388,7 +388,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     
     
     <!-- start: HOW IT WORKS -->
-	<section id="how-it-works" class="col-lg-12 col-sm-1" style="width:100%; background:url({% static 'bkio/img/02 how it works_bg.png' %}) no-repeat; background-size:contain;">
+	<section id="how-it-works" class="" style="width:100%; background:url({% static 'bkio/img/02 how it works_bg.png' %}) no-repeat; background-size:contain;">
         <div class="row justify-content-center">
             <div class="text-center">
                 <h1 class="letter-spacing-1 text-uppercase" style="color:#fff;"> HOW IT WORKS </h1>
@@ -442,7 +442,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 	<section id="whitepaper" style="padding:0 !important">
         <container style="">
             
-            <div class="m-5" style="">
+            <div class="m-4" style="">
                 <div>
                     <h5 class="m-0" style="font-weight:400; color:#fff;"> WHITE PAPER </h5>
                 </div>
@@ -458,7 +458,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
             <!--span style="color:#ccc;">|</span-->
 
-            <div class="m-5" style="">
+            <div class="m-4" style="">
                 <div>
                     <h5 class="m-0" style="font-weight:400; color:#fff;"> ONE PAGER </h5>
                 </div>
@@ -515,10 +515,10 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 		<div class="col-lg-12 text-center">
 			<h1 class="letter-spacing-1 text-uppercase"> ROADMAP </h1>
 		</div>
-		<div class="pc text-center" style="width:52%; height:auto; margin:auto;">
+		<div id="roadmap-pc" class="text-center" style="width:52%; height:auto; margin:auto;">
 			<img src="{% static 'bkio/img/04 roadmap.png' %}" style="max-width:100%; height:auto !important;">
 		</div>
-        <div class="mobile text-center" style="width:80%; margin:auto;">
+        <div id="roadmap-m" class="text-center" style="width:80%; margin:auto;">
 			<img src="{% static 'bkio/img/04 roadmap_m.png' %}" style="max-width:100%; height:auto !important;">
 		</div>
 		<!--
@@ -590,7 +590,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
 
 	<!-- start: TEAM -->
-	<section id="team" class="col-lg-12 col-sm-1 text-center" style="background-color: rgb(247,247,247,1);">
+	<section id="team" class="text-center" style="background-color: rgb(247,247,247,1);">
 		<container>
 			<div>
 				<div>
@@ -789,7 +789,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     
     
     <!-- start: ADVISORS -->
-	<section id="team" class="pt-0 mt-0 col-lg-12 col-sm-1 text-center" style="background-color: rgb(247,247,247,1);">
+	<section id="team" class="pt-0 mt-0 text-center" style="background-color: rgb(247,247,247,1);">
 		<container>
 			<div>
 				<div>
@@ -1071,14 +1071,14 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                 
                 <div class="mt-3">
                     <div class=""> 
-                        <h5 class="mb-6" style="line-height:1.95rem !important; text-decoration-line:underline;">
+                        <h5 class="mb-6" style="line-height:1.9rem !important; text-decoration-line:underline;">
                             For more information,
                             <br>
                             please contact us !
                         </h5>
 
                         <!--h6 class="text-large m-0" style="color:#2850b7;">E-MAIL</h6-->
-                        <span class="mb-4 d-block text-large letter-spacing-1">
+                        <span class="mb-4 d-block text-medium letter-spacing-1">
                             <a href="mailto:info@bluebaikal.com" class="text-gray-800">info@bluebaikal.com </a>
                         </span>
 
@@ -1164,7 +1164,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     <!-- end: CONTACT -->
 
 	<!-- Footer Start -->
-	<footer class="py-5 row justify-content-center" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); background-size:cover; max-width:100%; height:auto; justify-content:center;">
+	<footer class="py-5" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); background-size:cover; max-width:100%; height:auto; justify-content:center;">
 		
         <container style="margin:0 auto; width:100%;" class="row justify-content-center">
 			<div class="" style="flex:0; width:100%; display:flex;">
