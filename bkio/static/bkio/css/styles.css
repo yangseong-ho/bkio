@@ -154,7 +154,7 @@ a {
 }
 
 .btn-join div {
-    border-radius: 20px;
+    border-radius: 40px;
     width: 100%;
     background-color: #3984ff;
     padding: 4%;
@@ -162,7 +162,7 @@ a {
 }
 
 .btn-join div:hover {
-    border-radius: 20px;
+    border-radius: 40px;
     width: 100%;
     background-color: #2b76f1;
     padding: 4%;
@@ -257,10 +257,10 @@ a {
     }
     
     /* Main Visual */
-    #mobile, #roadmap-m {
+     #m-carouselExampleIndicators, #roadmap-m {
         visibility: visible !important;
     }
-    #pc, #roadmap-pc {
+     #pc-carouselExampleIndicators, #roadmap-pc {
         display: none !important;
     }
     
@@ -299,14 +299,35 @@ a {
     }
     
     
-    /* HOW IT WORKS */
+    /* HOW IT WORKS - mobile */
     
     #how-it-works {
-        /*width: 100%;
+        width: 100%;
         height: auto;
         background: url("../img/02 how it works_bg_m.png") no-repeat !important;
-        background-size: contain;*/
+        background-size: contain !important;
     }
+    #how-it-works container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #how-it-works container div {
+        width: 80%;
+        margin-bottom: 5rem;
+    }
+    #how-it-works container div:nth-child(3) {
+        margin-bottom: 0 !important;
+    }
+    
+    #how-it-works .partcipants-01 {
+        color: #fff !important;
+    }
+    
+    #how-it-works .partcipants-02, .partcipants-03  {
+        color: #212529 !important;
+    }
+    
     
 
     
@@ -402,10 +423,10 @@ a {
 @media all and (min-width:769px) {
     
     /* Main Visual */
-    #mobile, #roadmap-m {
+    #m-carouselExampleIndicators, #roadmap-m {
         display: none !important;
     }
-    #pc, #roadmap-pc {
+    #pc-carouselExampleIndicators, #roadmap-pc {
         visibility: visible !important;
     }
     
@@ -428,24 +449,33 @@ a {
     
     .project_img {
         float:left;
-        width:35%; 
-        margin:3%;
+        width: 26rem;
+        margin: 4rem;
     }
     
     .project_desc {
         float: left;
-        width: 30.25%;
-        margin: 3%;
+        width: 22rem;
+        margin: 4rem;
     }
     
     
-    /* HOW IT WORKS */
+    /* HOW IT WORKS - pc */
     
     #how-it-works {
-       /* width: 100%;
-        height: auto;
-        background: url("../img/02 how it works_bg.png") no-repeat !important;
-        background-size: contain;*/
+        width: 100%;
+        background: url("../img/02 how it works_bg.png") no-repeat;
+        background-size: contain;
+    }
+    #how-it-works container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #how-it-works container div {
+        width: 26%;
+    }
+    #how-it-works .partcipants-01, .partcipants-02, .partcipants-03 {
+        color: #fff !important;
     }
     
     

@@ -6453,11 +6453,12 @@ button.close {
 }
 
 /* indicators  button */
-.carousel-indicators {
-	position: absolute;
-	right: 0;
-	left: 0;
-	bottom: 5%;
+#m-carouselExampleIndicators .carousel-indicators,
+#pc-carouselExampleIndicators .carousel-indicators {
+    position: fixed;
+    /*right: 0;
+    left: 0;*/
+    bottom: 7% !important;
 	z-index: 15;
 	display: -ms-flexbox;
 	display: flex;

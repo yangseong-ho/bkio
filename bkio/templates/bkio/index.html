@@ -13,7 +13,7 @@
 	</script>
 	<script type="text/javascript" id="www-widgetapi-script" src="{% static 'bkio/js/www-widgetapi.js' %}" async=""></script>
 	<script src="https://www.youtube.com/iframe_api?v=3.1.12" id="YTAPI"></script>
-	<title>BLUEBAIKAL</title>
+	<title>BLUE BAIKAL</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta charset="UTF-8">
@@ -148,15 +148,15 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 	<!-- Header Start -->
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- Main Visual (PC) Start -->
+    <div id="pc-carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#pc-carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#pc-carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#pc-carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         
-        <!-- Main Visual (PC) Start -->
-        <div id="pc" class="carousel-inner">
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{% static 'bkio/img/00 main_1.png' %}" style="max-width:100%; max-height:100%; min-height: 400px; position: relative;" alt="First slide">
 
@@ -222,10 +222,18 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
             </div>
         </div>
-        <!-- // Main Visual (PC) -->
-
-        <!-- Main Visual (Mobile) Start -->
-        <div id="mobile" class="carousel-inner">
+    </div>
+    <!-- // Main Visual (PC) -->
+   
+    
+    <!-- Main Visual (Mobile) Start -->
+    <div id="m-carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#m-carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#m-carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#m-carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
             <div class="carousel-item active text-center" style="width:100%;">
                 <!--div class="carousel-caption" style="width:70%;">
                     <div>
@@ -268,7 +276,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
 
             <!-- Join Blue Baikal --> 
-            <div class="text-center" style="width:80%; padding:10%; margin:0 auto;">
+            <div class="text-center" style="width:75%; padding:6rem 0; margin:0 auto;">
                 <div>
                     <h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: inherit;">
                         Join Blue Baikal and receive <span style="color:#3984ff">100BBK</span>!
@@ -276,7 +284,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                 </div>
 
                 <div>
-                    <h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">
+                    <h6 style="font-size:1.05rem; font-weight:400; margin-bottom:1.65rem; line-height: 1.7; color:inherit;">
                         Join Blue Baikal and receive 100BBK Tokens. Use them to enjoy contents you want.
                     </h6>
                 </div>
@@ -289,9 +297,11 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
             </div>
         </div>
-        <!-- // Main Visual (Mobile) -->
     </div>
-   
+    <!-- // Main Visual (Mobile) -->
+    
+    
+    
     
     
 	<!--div id="visual-mobile" style="width:100%; height:auto;">
@@ -323,7 +333,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 -->
 
 	<!--  start: BLUE BAIKAL PROJECT  -->
-	<section id="project" style="background-color:rgb(247,247,247,1); max-width:100%;">
+	<section id="project" class="col-12" style="background-color:rgb(247,247,247,1); max-width:100%;">
 
 		<div class="justify-content-center" style="width:80%; margin:0 auto;">
 			<div class="text-center">
@@ -370,10 +380,9 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 			<div class="project_desc" style="">
 					<h3 class="mb-4">Entertainment Content Platform based on Blockchain</h3>
 					
-                    <div class="text-large" style="text-align:justify; line-height:1.95rem;">
+                    <div class="text-medium" style="text-align:justify; line-height:1.95rem;">
 						Blue Baikal is a blockchain basis platform that connects content producers, influencers, and cosumers. We pursue and ideal system where entertainment business can grow, maximize their profits, and fair profit sharing with the participants.
 					</div>
-
 			</div>
 
 		</container>
@@ -388,46 +397,47 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     
     
     <!-- start: HOW IT WORKS -->
-	<section id="how-it-works" class="" style="width:100%; background:url({% static 'bkio/img/02 how it works_bg.png' %}) no-repeat; background-size:contain;">
+	<section id="how-it-works" class="col-12" style="">
         <div class="row justify-content-center">
             <div class="text-center">
                 <h1 class="letter-spacing-1 text-uppercase" style="color:#fff;"> HOW IT WORKS </h1>
             </div>
         </div>
-        <container class="text-center" style="display:flex; flex-direction:row; justify-content:center;">
-            <div class="ml-4 mr-4" style="width:26.5%;">
-                <h4 class="mb-2 mb-lg-4 text-white">Consumers</h4>
+        <container class="text-center" style="display:flex;">
+            <div class="ml-4 mr-4" style="">
+                <h4 class="partcipants-01 mb-4 text-white">Consumers</h4>
                 <!--				<iframe class="youtube" src="https://www.youtube.com/embed/Ey68aMOV9gc" style="width: 100%;height: 300px" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
                 <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
 
                  <p class="mt-2 pb-0 mb-0" style="padding:1.15rem;">
-                    <span class="text-large">
+                    <span class="text-medium">
                         Access wide range of contents and receive BBK Tokens to purchase and invest in other contents.
                     </span>
                 </p>
             </div>
 
-            <div class="ml-4 mr-4" style="width:26.5%;">
-                <h4 class="mb-2 mb-lg-4 text-white">Influencers</h4>
+            <div class="ml-4 mr-4" style="">
+                <h4 class="partcipants-02 mb-4"> Influencers </h4>
                 <!--				<iframe class="youtube" src="https://www.youtube.com/embed/3LLjrHb5_bo" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
                 <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
 
-                 <p class="mt-2 pb-0 mb-0" style="padding:1.2em; line-height: 1.9rem">
-                    <span class="text-large">
+                 <p class="mt-2 pb-0 mb-0" style="padding:1.2em;">
+                    <span class="text-medium">
                         Become a trend in <br> 
-                        Entertainment field. Blue Baikal is always here for you.
+                        Entertainment field. Blue Baikal is <br>
+                        always here for you.
                     </span>
                 </p>
             </div>
 
-            <div class="ml-4 mr-4" style="width:26.5%;">
-                <h4 class="mb-3 mb-lg-4 text-white">Creators</h4>
+            <div class="ml-4 mr-4" style="">
+                <h4 class="partcipants-03 mb-4"> Creators </h4>
                 <!--				<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
                 <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
 
                 <p class="mt-2 pb-0 mb-0" style="padding:1.2rem;">
-                    <span class="text-large">
-                        Baikalians are here for you <br>
+                    <span class="text-medium">
+                        Baikaleans are here for you <br> 
                         from getting investments <br>
                         to content sales.
                     </span>
@@ -438,8 +448,11 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 	</section>
     <!--   // end: HOW IT WORKS  -->
     
+   
+    
+    
     <!-- start: WHITEPAPER -->
-	<section id="whitepaper" style="padding:0 !important">
+	<section id="whitepaper" class="col-12" style="padding:0 !important">
         <container style="">
             
             <div class="m-4" style="">
@@ -510,8 +523,9 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
 -->
 
-	<!-- start: ROADMAP -->
-	<section id="roadmap">
+
+<!-- start: ROADMAP -->
+	<section id="roadmap" class="col-12">
 		<div class="col-lg-12 text-center">
 			<h1 class="letter-spacing-1 text-uppercase"> ROADMAP </h1>
 		</div>
@@ -587,10 +601,11 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
 	</section>
     <!-- end: ROADMAP -->
-
-
-	<!-- start: TEAM -->
-	<section id="team" class="text-center" style="background-color: rgb(247,247,247,1);">
+    
+    
+    
+    <!-- start: TEAM -->
+	<section id="team" class="col-12 text-center" style="background-color: rgb(247,247,247,1);">
 		<container>
 			<div>
 				<div>
@@ -735,61 +750,16 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                 </div>
             </div>
             <!-- //STAFF --> 
-
-            
-            
-            
-				<!-- //. advisors
-    <div class="row justify-content-center mb-5">
-      <div class="col-lg-6 text-center mb-3 mb-lg-5">
-        <h3 class="font-alt font-w-700 letter-spacing-2 m-0 text-uppercase title-large">Advisors</h3>
-        <span class="bg-red d-block mt-4 mx-auto sep-line-medium-thick-long"></span>
-      </div>
-
-    </div>
    
-    <div class="row justify-content-center">
-
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="06%20partners_1.png" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Lee, Younghye </figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Lee, Younghye </span>
-          <span class="">CEO of Designhouse</span>
-          <span class="d-block font-alt font-w-400 text-gray-800 text-small">Publiser of 5 monthly magazines and books, Organizer of design related events and fairs, Committee member for Korea CEO Forum </span>
-        </div>
-
-      </div>
-      
-      <div class="col-md-6 col-lg-4">
-        <figure class="m-0 position-relative">
-          <img src="06%20partners_2.png" alt="" class="img-fluid">
-          <figcaption class="label label-small bg-black bottom-0 m-3 position-absolute right-0 text-uppercase text-white">Lee, Sujeong </figcaption>
-        </figure>
-
-        <div class="py-4 text-center">
-          <span class="d-block font-alt font-w-600 letter-spacing-1 text-medium text-uppercase">Lee, Sujeong</span>
-          <span class="">CEO and Founder of E4NET</span>
-        </div>
-        
-      </div>
-            
-    </div> 
-    
-	-->
 		</container>
 		<!-- //.container -->
 	</section>
     <!-- end: TEAM -->
     
-    
-    
-    
+
+	    
     <!-- start: ADVISORS -->
-	<section id="team" class="pt-0 mt-0 text-center" style="background-color: rgb(247,247,247,1);">
+	<section id="team" class="col-12 pt-0 mt-0 text-center" style="background-color: rgb(247,247,247,1);">
 		<container>
 			<div>
 				<div>
@@ -959,6 +929,9 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
             <!-- //ADVISORS --> 
         </container>
     </section>
+    
+    
+
 
 
 
@@ -1059,7 +1032,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
    
     <!-- start: CONTACT -->
-	<section id="contact">
+	<section id="contact" class="col-12">
         <!-- consist of 2 divs: info && message form -->
 		<container>
             <!-- 1. info -->
@@ -1164,7 +1137,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     <!-- end: CONTACT -->
 
 	<!-- Footer Start -->
-	<footer class="py-5" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); background-size:cover; max-width:100%; height:auto; justify-content:center;">
+	<footer class="py-5 col-12" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); background-size:cover; height:auto; justify-content:center;">
 		
         <container style="margin:0 auto; width:100%;" class="row justify-content-center">
 			<div class="" style="flex:0; width:100%; display:flex;">
