@@ -6453,20 +6453,36 @@ button.close {
 }
 
 /* indicators  button */
-#m-carouselExampleIndicators .carousel-indicators,
 #pc-carouselExampleIndicators .carousel-indicators {
-    position: fixed;
+    width: 100%;
+    position: absolute;
     /*right: 0;
     left: 0;*/
-    bottom: 7% !important;
+    bottom: 8% !important;
 	z-index: 15;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: center;
 	justify-content: center;
 	padding-left: 0;
-	margin-right: 15%;
-	margin-left: 15%;
+	/*margin-right: 15%;
+	margin-left: 15%;*/
+	list-style: none
+}
+#m-carouselExampleIndicators .carousel-indicators {
+    width: 100%;
+    position: absolute;
+    /*right: 0;
+    left: 0;*/
+    top: 22% !important;
+	z-index: 15;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-left: 0;
+	/*margin-right: 15%;
+	margin-left: 15%;*/
 	list-style: none
 }
 

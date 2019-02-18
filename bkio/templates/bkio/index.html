@@ -149,13 +149,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
 
     <!-- Main Visual (PC) Start -->
-    <div id="pc-carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#pc-carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#pc-carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#pc-carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        
+    <div id="pc-carouselExampleIndicators" class="carousel slide" data-ride="carousel">    
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{% static 'bkio/img/00 main_1.png' %}" style="max-width:100%; max-height:100%; min-height: 400px; position: relative;" alt="First slide">
@@ -222,17 +216,18 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
             </div>
         </div>
+        
+        <ol class="carousel-indicators">
+            <li data-target="#pc-carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#pc-carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#pc-carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
     </div>
     <!-- // Main Visual (PC) -->
    
     
     <!-- Main Visual (Mobile) Start -->
     <div id="m-carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#m-carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#m-carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#m-carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active text-center" style="width:100%;">
                 <!--div class="carousel-caption" style="width:70%;">
@@ -297,6 +292,12 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
             </div>
         </div>
+        
+        <ol class="carousel-indicators">
+            <li data-target="#m-carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#m-carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#m-carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
     </div>
     <!-- // Main Visual (Mobile) -->
     
@@ -1137,7 +1138,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
     <!-- end: CONTACT -->
 
 	<!-- Footer Start -->
-	<footer class="py-5 col-12" style="background-image: url({% static 'bkio/img/07 footer_bg.png' %}); background-size:cover; height:auto; justify-content:center;">
+	<footer class="py-5 col-12" style="background: url({% static 'bkio/img/07 footer_bg.png' %}) no-repeat; background-size:cover; height:auto; justify-content:center;">
 		
         <container style="margin:0 auto; width:100%;" class="row justify-content-center">
 			<div class="" style="flex:0; width:100%; display:flex;">
