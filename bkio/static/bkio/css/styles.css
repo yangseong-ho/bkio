@@ -285,14 +285,16 @@ a {
     }
     
     .project_img { 
-        width: 60% !important;
+        width: 73% !important;
         margin: 0 auto;
         margin-bottom: 2.5rem;
     }
     
     .project_desc {
-        width: 76% !important;
+        width: 85% !important;
+        margin-top: 4rem !important;
         margin: 0 auto;
+        text-align: left;
     }
     .project_desc h3 {
         line-height: 1.4;
@@ -326,6 +328,10 @@ a {
     
     #how-it-works .partcipants-02, .partcipants-03  {
         color: #212529 !important;
+    }
+    
+    #how-it-works container div p {
+        padding: 1rem;
     }
     
     
@@ -363,7 +369,7 @@ a {
         text-align: center;
     }
     #whitepaper a, #whitepaper .btn-disabled {
-        width: 9rem; 
+        width: 7rem; 
     }
     
     
@@ -402,7 +408,7 @@ a {
         justify-content: center;
     }
     .message-form {
-        width: 70% !important;
+        width: 80% !important;
         clear: both;
         display: block;
         margin: 0 auto;
@@ -476,6 +482,10 @@ a {
     }
     #how-it-works .partcipants-01, .partcipants-02, .partcipants-03 {
         color: #fff !important;
+    }
+    
+    #how-it-works container div p {
+        padding: 1.2rem;
     }
     
     

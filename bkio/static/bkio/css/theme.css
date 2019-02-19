@@ -4,8 +4,10 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosans.css);
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900'); /* font: Poppins */
-@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css); /* font: Nanum Square */
-	body        { font-family: 'NanumSquare', sans-serif; }
+@import url(‘//cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css’);
+/* font: Nanum Square Round */
+
+	body        { font-family: 'Poppins','NanumSquareRound', sans-serif; }
 	.normal     { font-weight: 400 }
 	.bold       { font-weight: 700 }
 	.bolder     { font-weight: 800 }
@@ -13,7 +15,7 @@
 
 
 body, html {
-  font-family: 'Poppins', 'NanumSquare', sans-serif;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif;
   height: 100%;
 }
 *{ 
@@ -325,7 +327,7 @@ body, html {
   border-radius: 0.125rem;
   box-shadow: none !important;
   cursor: pointer;
-  font-family: 'Poppins', 'NanumSquare', sans-serif;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.1125rem;
@@ -926,7 +928,7 @@ body, html {
   display: block;
   height: 45px;
   left: 0;
-  font-family: 'Poppins', 'NanumSquare', sans-serif;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif;
   font-size: 0.875rem;
   padding: 0.875rem 1.25rem;
   position: absolute;
@@ -1292,11 +1294,11 @@ li.checkmark-yellow:before {
 */
 
 .font-base {
-    font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+    font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
 }
 
 .font-alt {
-    font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+    font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
 }
 
 
@@ -1326,7 +1328,7 @@ input[type="email"].form-control, input[type="text"].form-control, textarea.form
   border-color: rgb(0, 64, 175, 0.75)! important;
   border-radius: 2px;
   color: #495057;
-  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
   font-size: 0.6875rem !important;
   font-weight: 600;
   letter-spacing: 0.0625rem !important;
@@ -1360,7 +1362,7 @@ label.error {
 
 ::-webkit-input-placeholder {
   color: #495057 !important;
-  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
   font-weight: 600;
   font-size: 0.6875rem !important;
   letter-spacing: 0.0625rem !important;
@@ -1371,7 +1373,7 @@ label.error {
 
 :-moz-placeholder {
   color: #495057 !important;
-  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
   font-weight: 600;
   font-size: 0.6875rem !important;
   letter-spacing: 0.0625rem !important;
@@ -1382,7 +1384,7 @@ label.error {
 
 :-ms-input-placeholder {
   color: #495057 !important;
-  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
   font-weight: 600;
   font-size: 0.6875rem !important;
   letter-spacing: 0.0625rem !important;
@@ -1473,7 +1475,7 @@ label.error {
 }
 
 .mfp-title, .mfp-counter {
-  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -1605,34 +1607,25 @@ header, header .navbar-header, header .navbar-brand img {
   transition: all 0.3s ease;
 }
 
-/*
-@media (max-width:576px) {
+@media all and (max-width:768px) {
     header .navbar-brand img {
-        width: 11.5rem;
-        height: auto;
-        position: relative;
-        top: 1.05rem;
-        left: 3rem !important;
-    }
-}
-@media (max-width:575.98px) {
-    header .navbar-brand img {
-        object-fit: contain;
+        /*object-fit: contain;*/
         width: 11.5rem !important;
         height: auto;
         position: relative;
         top: 1.05rem;
-        left: 2rem !important;
+        left: 1rem !important;
     }
 }
-*/
-header .navbar-brand img {
-    /*object-fit: contain;*/
-    width: 11.5rem !important;
-    height: auto;
-    position: relative;
-    top: 1.05rem;
-    left: 2rem !important;
+@media all and (min-width:769px) {
+    header .navbar-brand img {
+        /*object-fit: contain;*/
+        width: 11.5rem !important;
+        height: auto;
+        position: relative;
+        top: 1.05rem;
+        left: 2.5rem !important;
+    }
 }
 
 
@@ -1668,6 +1661,7 @@ header .navbar-header {
         position: fixed;
         float: left;
         left: .2rem;
+        z-index:1000;
     }
 }
 
@@ -1682,7 +1676,7 @@ header .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.4);
   border-radius: 2px;
   position: fixed;
-  right: .8rem;
+  right: .2rem;
   top: .8rem;
 }
 
@@ -1710,11 +1704,19 @@ header.header-light {
   background-color: white;
 }
 
-header.header-light .navbar-wrapper {
-    width: 65%;
-    float: right;
-    background-color: rgba(255, 255, 255, 0.98);
+@media all and (max-width:768px) {
+    header.header-light .navbar-wrapper {
+        width: 100vw;
+    }
 }
+@media all and (min-width:769px) {
+    header.header-light .navbar-wrapper {
+        width: 65%;
+        float: right;
+        background-color: rgba(255, 255, 255, 0.98);
+    }
+}
+
 
 header.header-light .navbar-brand .logo-text-dark {
   opacity: 1;
@@ -1745,7 +1747,7 @@ header.header-light .navbar-nav .nav-link {
 
 label, .label {
   border-radius: 2px;
-  font-family: 'Poppins', 'NanumSquare', sans-serif !important;
+  font-family: 'Poppins', 'NanumSquareRound', sans-serif !important;
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.0625rem;
@@ -2105,8 +2107,16 @@ label, .label {
 * Section
 */
 
-section, .section {
-  padding: 9rem 0rem;
+@media all and (min-width:769px) {
+    section, .section {
+      padding: 9rem 0rem;
+    }
+}
+
+@media all and (max-width:768px) {
+    section, .section {
+      padding: 6rem 0rem;
+    }
 }
 
 
@@ -2576,6 +2586,8 @@ section, .section {
   header .navbar-collapse {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+    background-color: white;
+    height: 100vh !important;
   }
 
   header .navbar-nav .nav-link {
@@ -2900,11 +2912,11 @@ section, .section {
 
   header.shrink {
     background-color: rgba(0, 0, 0, 0.98) !important;
-    height: 3.5rem !important;
+    height: 3.7rem !important;
   }
 
   header.shrink .navbar-header {
-    height: 3.5rem !important;
+    height: 3.7rem !important;
   }
 
   header.shrink .navbar-brand img {
