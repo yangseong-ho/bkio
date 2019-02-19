@@ -97,7 +97,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <img src="{% static 'bkio/img/navbar-toggler-light.svg' %}">
+                    <img src="{% static 'bkio/img/navbar-toggler.svg' %}">
                 </span>
             </button>
         </div>
@@ -124,20 +124,22 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                             <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                         </li>
                     </ul>
+
+                    <!-- ENG | KOR -->
+                    <div class="navbar-collapse" style="position:fixed; right:2rem; top:1.73rem;">
+                        <a class="nav-link page-scroll" href="//www.bluebaikal.io">
+                            <span class="text-small" style="color:#3984ff;"> ENG </span>
+                        </a>
+
+                        <span class="text-extra-small" style="color:#888; font-weight:lighter;"> | </span>
+
+                        <!--a data-toggle="modal" class="nav-link page-scroll" href="#LoginModal"-->
+                            <span class="text-small nav-link disabled" style=""> KOR </span>
+                        <!--/a-->
+                    </div>
                 </div>
 
-                <!-- ENG | KOR -->
-                <div class="collapse navbar-collapse" style="position:fixed; right:2rem; top:1.73rem;">
-                    <a class="nav-link page-scroll" href="//www.bluebaikal.io">
-                        <span class="text-small" style="color:#3984ff;"> ENG </span>
-                    </a>
-                    
-                    <span class="text-extra-small" style="color:#888; font-weight:lighter;"> | </span>
-                    
-                    <!--a data-toggle="modal" class="nav-link page-scroll" href="#LoginModal"-->
-                        <span class="text-small nav-link disabled" style=""> KOR </span>
-                    <!--/a-->
-                </div>
+                
                     
 
             </div>           
@@ -160,7 +162,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                     </div>
                     <div>
                         <span class="text-medium" style="margin-bottom:1.65rem; color:#000;">
-                            Enjoy and share your favorite contents and receive rewards in BBK Tokens!
+                            Enjoy and share your favorite contents and receive rewards in BBC Tokens!
                         </span>
                     </div>
                 </div>
@@ -173,7 +175,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                     <h5 style="margin-bottom:.9rem; line-height:1.35; color:black;">Digital Content Store</h5>
                     <div>
                         <span class="text-medium" style="margin-bottom:1.65rem; color:#000;">
-                            Access and enjoy contents you want by using BBK Tokens from Blue Baikal!
+                            Access and enjoy contents you want by using BBC Tokens from Blue Baikal!
                         </span>
                     </div>
                 </div>
@@ -195,16 +197,16 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
             </div>
 
             <!--		1.35rem, 1.05rem, x-->
-            <div class="join-desc" style="background-color:#fff; position:absolute; left:8%; top:20%; padding:2.8%; border-radius: 20px; width:21.5%;">
+            <div class="join-desc" style="background-color:#fff; position:absolute; left:8%; top:20%; padding:2.8%; border-radius: 20px; width:22%;">
                 <div>
                     <h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: inherit;">
-                        Join Blue Baikal and receive <span style="color:#3984ff">100BBK</span>!
+                        Join Blue Baikal and receive <span style="color:#3984ff">100BBC</span>!
                     </h4>
                 </div>
 
                 <div>
                     <h6 style="font-size: 1.05rem; font-weight:400; margin-bottom: 1.65rem; line-height: 1.7; color: inherit;">
-                        Join Blue Baikal and receive 100BBK Tokens. Use them to enjoy contents you want.
+                        Join Blue Baikal and receive 100BBC Tokens. Use them to enjoy contents you want.
                     </h6>
                 </div>
 
@@ -248,7 +250,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                     <h5 style="margin-bottom:.9rem; line-height:1.35; color:black;">Digital Content Store</h5>
                     <div>
                         <span class="text-medium" style="margin-bottom:1.65rem; color:#000;">
-                            Access and enjoy contents by using BBK Tokens!
+                            Access and enjoy contents by using BBC Tokens!
                         </span>
                     </div>
                 </div-->
@@ -268,19 +270,25 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                 </div-->
                 <img src="{% static 'bkio/img/main_m_3.png' %}" style="max-width:100%;" alt="Third slide">
             </div>
+            
+            <ol class="carousel-indicators">
+                <li data-target="#m-carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#m-carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#m-carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
 
 
             <!-- Join Blue Baikal --> 
             <div class="text-center" style="width:75%; padding:6rem 0; margin:0 auto;">
                 <div>
                     <h4 style="font-size: 1.35rem; font-weight:600; margin-bottom: .9rem; line-height: 1.35; color: inherit;">
-                        Join Blue Baikal and receive <span style="color:#3984ff">100BBK</span>!
+                        Join Blue Baikal and receive <span style="color:#3984ff">100BBC</span>!
                     </h4>
                 </div>
 
                 <div>
                     <h6 style="font-size:1.05rem; font-weight:400; margin-bottom:1.65rem; line-height: 1.7; color:inherit;">
-                        Join Blue Baikal and receive 100BBK Tokens. Use them to enjoy contents you want.
+                        Join Blue Baikal and receive 100BBC Tokens. Use them to enjoy contents you want.
                     </h6>
                 </div>
 
@@ -292,12 +300,6 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 
             </div>
         </div>
-        
-        <ol class="carousel-indicators">
-            <li data-target="#m-carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#m-carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#m-carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
     </div>
     <!-- // Main Visual (Mobile) -->
     
@@ -367,9 +369,8 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 				<h6> Book </h6>
 				<img style="max-width:100%; height:auto !important; " src="{% static 'bkio/img/01 project_icon_5.png' %}">
 			</div>
+            <br><br>
 		</container>
-        
-        <br><br>
        
 		<container class="project_info" style="margin:0 auto;">
 			<!--		padding:100px; padding-left:200;-->
@@ -381,7 +382,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
 			<div class="project_desc" style="">
 					<h3 class="mb-4">Entertainment Content Platform based on Blockchain</h3>
 					
-                    <div class="text-medium" style="text-align:justify; line-height:1.95rem;">
+                    <div class="text-medium" style="line-height:1.95rem;">
 						Blue Baikal is a blockchain basis platform that connects content producers, influencers, and cosumers. We pursue and ideal system where entertainment business can grow, maximize their profits, and fair profit sharing with the participants.
 					</div>
 			</div>
@@ -403,16 +404,16 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
             <div class="text-center">
                 <h1 class="letter-spacing-1 text-uppercase" style="color:#fff;"> HOW IT WORKS </h1>
             </div>
-        </div>
+        </div> 
         <container class="text-center" style="display:flex;">
             <div class="ml-4 mr-4" style="">
                 <h4 class="partcipants-01 mb-4 text-white">Consumers</h4>
                 <!--				<iframe class="youtube" src="https://www.youtube.com/embed/Ey68aMOV9gc" style="width: 100%;height: 300px" frameborder="0" allow=" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
                 <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
 
-                 <p class="mt-2 pb-0 mb-0" style="padding:1.15rem;">
+                 <p class="mt-2 pb-0 mb-0">
                     <span class="text-medium">
-                        Access wide range of contents and receive BBK Tokens to purchase and invest in other contents.
+                        Access wide range of contents and receive BBC Tokens to purchase and invest in other contents.
                     </span>
                 </p>
             </div>
@@ -422,7 +423,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                 <!--				<iframe class="youtube" src="https://www.youtube.com/embed/3LLjrHb5_bo" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
                 <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
 
-                 <p class="mt-2 pb-0 mb-0" style="padding:1.2em;">
+                 <p class="mt-2 pb-0 mb-0">
                     <span class="text-medium">
                         Become a trend in <br> 
                         Entertainment field. Blue Baikal is <br>
@@ -436,7 +437,7 @@ box-shadow: 7px 7px 16px -8px rgba(102,102,102,0.35);">
                 <!--				<iframe class="youtube" src="https://www.youtube.com/embed/FKd_ks0rdAM" style="width: 100%; height: 300px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
                 <img src="{% static 'bkio/img/01_3 intro_video.png' %}" style="max-width:100%; height:auto;" />
 
-                <p class="mt-2 pb-0 mb-0" style="padding:1.2rem;">
+                <p class="mt-2 pb-0 mb-0">
                     <span class="text-medium">
                         Baikaleans are here for you <br> 
                         from getting investments <br>
